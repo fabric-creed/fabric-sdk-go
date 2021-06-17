@@ -25,6 +25,7 @@ import (
 	"crypto/elliptic"
 	"crypto/rand"
 	"fmt"
+	"github.com/cetcxinlian/cryptogm/sm2"
 
 	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
@@ -39,7 +40,7 @@ func (kg *ecdsaKeyGenerator) KeyGen(opts bccsp.KeyGenOpts) (bccsp.Key, error) {
 		return nil, fmt.Errorf("Failed generating ECDSA key for [%v]: [%s]", kg.curve, err)
 	}
 
-	return &ecdsaPrivateKey{privKey, true}, nil
+	return &ecdsaPrivateKey{privKey: privKey}, nil
 }
 
 type aesKeyGenerator struct {
@@ -53,4 +54,17 @@ func (kg *aesKeyGenerator) KeyGen(opts bccsp.KeyGenOpts) (bccsp.Key, error) {
 	}
 
 	return &aesPrivateKey{lowLevelKey, false}, nil
+}
+
+type sm2KeyGenerator struct {
+	curve elliptic.Curve
+}
+
+func (kg *sm2KeyGenerator) KeyGen(opts bccsp.KeyGenOpts) (bccsp.Key, error) {
+	privKey, err := sm2.GenerateKey(rand.Reader)
+	if err != nil {
+		return nil, fmt.Errorf("Failed generating sm2 key : [%s]", err)
+	}
+
+	return &sm2PrivateKey{privKey}, nil
 }
