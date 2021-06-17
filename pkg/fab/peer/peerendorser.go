@@ -8,12 +8,12 @@ package peer
 
 import (
 	reqContext "context"
-	"crypto/x509"
 	"regexp"
 	"time"
 
 	"github.com/pkg/errors"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/keepalive"
@@ -74,7 +74,7 @@ func newPeerEndorser(endorseReq *peerEndorserRequest) (*peerEndorser, error) {
 		if err != nil {
 			return nil, err
 		}
-		//verify if certificate was expired or not yet valid
+		// verify if certificate was expired or not yet valid
 		tlsConfig.VerifyPeerCertificate = func(rawCerts [][]byte, verifiedChains [][]*x509.Certificate) error {
 			return verifier.VerifyPeerCertificate(rawCerts, verifiedChains)
 		}
@@ -165,14 +165,14 @@ func (p *peerEndorser) sendProposal(ctx reqContext.Context, proposal fab.Process
 			err = status.NewFromGRPCStatus(rpcStatus)
 		}
 	} else {
-		//check error from response (for :fabric v1.2 and later)
+		// check error from response (for :fabric v1.2 and later)
 		err = extractChaincodeErrorFromResponse(resp)
 	}
 
 	return resp, err
 }
 
-//extractChaincodeErrorFromResponse extracts chaincode error from proposal response
+// extractChaincodeErrorFromResponse extracts chaincode error from proposal response
 func extractChaincodeErrorFromResponse(resp *pb.ProposalResponse) error {
 	if resp.Response.Status < int32(common.Status_SUCCESS) || resp.Response.Status >= int32(common.Status_BAD_REQUEST) {
 		details := []interface{}{resp.Endorsement, resp.Response.Payload}

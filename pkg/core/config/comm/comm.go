@@ -7,10 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package comm
 
 import (
-	"crypto/tls"
-
-	"crypto/x509"
-
+	"github.com/cetcxinlian/cryptogm/tls"
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/hyperledger/fabric-sdk-go/pkg/core/cryptosuite"
 	"github.com/pkg/errors"
@@ -46,7 +44,7 @@ func TLSCertHash(config fab.EndpointConfig) ([]byte, error) {
 	return computeHash(cert.Certificate[0])
 }
 
-//computeHash computes hash for given bytes using underlying cryptosuite default
+// computeHash computes hash for given bytes using underlying cryptosuite default
 func computeHash(msg []byte) ([]byte, error) {
 	h, err := cryptosuite.GetDefault().Hash(msg, cryptosuite.GetSHA256Opts())
 	if err != nil {

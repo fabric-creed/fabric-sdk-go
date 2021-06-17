@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0
 package membership
 
 import (
-	"crypto/x509"
 	"encoding/pem"
 
 	"strings"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/golang/protobuf/proto"
 	mb "github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
@@ -129,7 +129,7 @@ func createMSPManager(ctx Context, cfg fab.ChannelCfg) (msp.MSPManager, []string
 		}
 	}
 
-	//To make sure tls cert pool is updated in advance with all the new certs being added,
+	// To make sure tls cert pool is updated in advance with all the new certs being added,
 	// to avoid delay in first endorsement connection with new peer
 	_, err := ctx.EndpointConfig.TLSCACertPool().Get()
 	if err != nil {
@@ -214,7 +214,7 @@ func getFabricConfig(config *mb.MSPConfig) (*mb.FabricMSPConfig, error) {
 	return fabricConfig, nil
 }
 
-//addCertsToConfig adds cert bytes to config TLSCACertPool
+// addCertsToConfig adds cert bytes to config TLSCACertPool
 func addCertsToConfig(config fab.EndpointConfig, pemCertsList [][]byte) {
 
 	if len(pemCertsList) == 0 {

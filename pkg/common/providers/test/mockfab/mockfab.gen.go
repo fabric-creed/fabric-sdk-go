@@ -6,10 +6,10 @@ package mockfab
 
 import (
 	context "context"
-	tls "crypto/tls"
 	reflect "reflect"
 	time "time"
 
+	"github.com/cetcxinlian/cryptogm/tls"
 	gomock "github.com/golang/mock/gomock"
 	fab "github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	tls0 "github.com/hyperledger/fabric-sdk-go/pkg/core/config/comm/tls"

@@ -9,15 +9,13 @@ package peer
 import (
 	reqContext "context"
 
-	"crypto/x509"
-
-	"github.com/spf13/cast"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/keepalive"
-
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/common/verifier"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/spf13/cast"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/keepalive"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")
@@ -136,7 +134,7 @@ func FromPeerConfig(peerCfg *fab.NetworkPeer) Option {
 		var err error
 		p.certificate = peerCfg.TLSCACert
 		if peerCfg.GRPCOptions["allow-insecure"] == false {
-			//verify if certificate was expired or not yet valid
+			// verify if certificate was expired or not yet valid
 			err = verifier.ValidateCertificateDates(p.certificate)
 			if err != nil {
 				logger.Warn(err)

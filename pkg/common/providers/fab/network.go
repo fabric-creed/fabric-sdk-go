@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package fab
 
 import (
-	"crypto/x509"
 	"time"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/retry"
 )
 
@@ -28,27 +28,27 @@ type ChannelEndpointConfig struct {
 	// Peers a list of peer-channels that are part of this organization
 	// to get the real Peer config object, use the Name field and fetch NetworkConfig.Peers[Name]
 	Peers map[string]PeerChannelConfig
-	//Policies list of policies for channel
+	// Policies list of policies for channel
 	Policies ChannelPolicies
 }
 
-//ChannelPolicies defines list of policies defined for a channel
+// ChannelPolicies defines list of policies defined for a channel
 type ChannelPolicies struct {
-	//Policy for querying channel block
+	// Policy for querying channel block
 	QueryChannelConfig QueryChannelConfigPolicy
 	Discovery          DiscoveryPolicy
 	Selection          SelectionPolicy
 	EventService       EventServicePolicy
 }
 
-//QueryChannelConfigPolicy defines policy for channelConfigBlock
+// QueryChannelConfigPolicy defines policy for channelConfigBlock
 type QueryChannelConfigPolicy struct {
 	MinResponses int
 	MaxTargets   int
 	RetryOpts    retry.Opts
 }
 
-//DiscoveryPolicy defines policy for discovery
+// DiscoveryPolicy defines policy for discovery
 type DiscoveryPolicy struct {
 	MinResponses int
 	MaxTargets   int
@@ -78,7 +78,7 @@ const (
 	Random BalancerType = "Random"
 )
 
-//SelectionPolicy defines policy for selection
+// SelectionPolicy defines policy for selection
 type SelectionPolicy struct {
 	// SortingStrategy is the endorser sorting strategy to use
 	SortingStrategy SelectionSortingStrategy

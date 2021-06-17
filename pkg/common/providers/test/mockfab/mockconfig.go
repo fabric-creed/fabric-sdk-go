@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package mockfab
 
 import (
-	tls "crypto/tls"
-	x509 "crypto/x509"
 	"time"
 
+	"github.com/cetcxinlian/cryptogm/tls"
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/golang/mock/gomock"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
@@ -66,18 +66,18 @@ func BadTLSClientMockConfig(mockCtrl *gomock.Controller) *MockEndpointConfig {
 	return config
 }
 
-//MockCertPool for unit tests to mock CertPool
+// MockCertPool for unit tests to mock CertPool
 type MockCertPool struct {
 	CertPool *x509.CertPool
 	Err      error
 }
 
-//Get mock implementation of fab CertPool.Get()
+// Get mock implementation of fab CertPool.Get()
 func (c *MockCertPool) Get() (*x509.CertPool, error) {
 	return c.CertPool, c.Err
 }
 
-//Add mock impl of adding certs to cert pool queue
+// Add mock impl of adding certs to cert pool queue
 func (c *MockCertPool) Add(certs ...*x509.Certificate) {
 
 }

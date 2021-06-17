@@ -7,13 +7,13 @@ SPDX-License-Identifier: Apache-2.0
 package tls
 
 import (
-	"crypto/x509"
 	"encoding/pem"
 	"errors"
 	"strconv"
 	"testing"
 	"time"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -74,7 +74,7 @@ xjm288m0ljoCID1CMTrMDZn8M/YYpPrw9WkS3n2clykUQeMxeMN8uUCj
 
 func TestTLSCAConfigWithMultipleCerts(t *testing.T) {
 
-	//prepare 3 certs
+	// prepare 3 certs
 	certOrg1, err := getCertFromPEMBytes([]byte(tlsCaOrg1))
 	assert.Nil(t, err)
 	assert.NotNil(t, certOrg1)
@@ -87,56 +87,56 @@ func TestTLSCAConfigWithMultipleCerts(t *testing.T) {
 	assert.Nil(t, err)
 	assert.NotNil(t, certOrderer)
 
-	//number of subjects in system cert pool
+	// number of subjects in system cert pool
 	c, err := loadSystemCertPool(true)
 	assert.Nil(t, err)
 	numberOfSubjects := len(c.Subjects())
 
-	//create certpool instance
+	// create certpool instance
 	tlsCertPool, err := NewCertPool(true)
 	assert.Nil(t, err)
 
-	//Empty cert pool with just system cert pool certs
+	// Empty cert pool with just system cert pool certs
 	pool, err := tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 0, 0, 0, numberOfSubjects, 0)
 
-	//add 2 certs
+	// add 2 certs
 	tlsCertPool.Add(certOrderer, certOrg1)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 0, 2, 2, numberOfSubjects, 1)
 	pool, err = tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 
-	//add 1 existing cert, queue should be unchanged and dirty flag should be off
+	// add 1 existing cert, queue should be unchanged and dirty flag should be off
 	tlsCertPool.Add(certOrg1)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 	pool, err = tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 
-	//try again, add 1 existing cert, queue should be unchanged and dirty flag should be off
+	// try again, add 1 existing cert, queue should be unchanged and dirty flag should be off
 	tlsCertPool.Add(certOrg1)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 	pool, err = tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 
-	//add 2 existing certs, queue should be unchanged and dirty flag should be off
+	// add 2 existing certs, queue should be unchanged and dirty flag should be off
 	tlsCertPool.Add(certOrderer, certOrg1)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 	pool, err = tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 
-	//add 3 certs, (2 existing + 1 new), queue should have one extra cert and dirty flag should be on
+	// add 3 certs, (2 existing + 1 new), queue should have one extra cert and dirty flag should be on
 	tlsCertPool.Add(certOrderer, certOrg1, certOrg2)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 3, 3, numberOfSubjects, 1)
 	pool, err = tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 3, 3, 3, numberOfSubjects, 0)
 
-	//add all 3 existing certs, queue should be unchanged and dirty flag should be off
+	// add all 3 existing certs, queue should be unchanged and dirty flag should be off
 	tlsCertPool.Add(certOrderer, certOrg1, certOrg2)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 3, 3, 3, numberOfSubjects, 0)
 	pool, err = tlsCertPool.Get()
@@ -155,7 +155,7 @@ func verifyCertPoolInstance(t *testing.T, pool *x509.CertPool, fabPool CertPool,
 }
 
 func TestAddingDuplicateCertsToPool(t *testing.T) {
-	//prepare 3 certs
+	// prepare 3 certs
 	certOrg1, err := getCertFromPEMBytes([]byte(tlsCaOrg1))
 	assert.Nil(t, err)
 	assert.NotNil(t, certOrg1)
@@ -168,28 +168,28 @@ func TestAddingDuplicateCertsToPool(t *testing.T) {
 	assert.Nil(t, err)
 	assert.NotNil(t, certOrderer)
 
-	//number of subjects in system cert pool
+	// number of subjects in system cert pool
 	c, err := loadSystemCertPool(true)
 	assert.Nil(t, err)
 	numberOfSubjects := len(c.Subjects())
 
-	//create certpool instance
+	// create certpool instance
 	tlsCertPool, err := NewCertPool(true)
 	assert.Nil(t, err)
 
-	//Empty cert pool with just system cert pool certs
+	// Empty cert pool with just system cert pool certs
 	pool, err := tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 0, 0, 0, numberOfSubjects, 0)
 
-	//add multiple certs with duplicate
+	// add multiple certs with duplicate
 	tlsCertPool.Add(certOrderer, certOrg1, certOrderer, certOrg1, certOrg1, certOrg1, certOrderer, certOrderer)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 0, 2, 2, numberOfSubjects, 1)
 	pool, err = tlsCertPool.Get()
 	assert.Nil(t, err)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 2, 2, numberOfSubjects, 0)
 
-	//add multiple certs with duplicate
+	// add multiple certs with duplicate
 	tlsCertPool.Add(certOrderer, certOrg1, certOrderer, certOrg1, certOrg2, certOrg2, certOrg2, certOrderer, certOrderer)
 	verifyCertPoolInstance(t, pool, tlsCertPool, 2, 3, 3, numberOfSubjects, 1)
 	pool, err = tlsCertPool.Get()
@@ -199,7 +199,7 @@ func TestAddingDuplicateCertsToPool(t *testing.T) {
 
 func TestRemoveDuplicatesCerts(t *testing.T) {
 
-	//prepare 3 certs
+	// prepare 3 certs
 	certOrg1, err := getCertFromPEMBytes([]byte(tlsCaOrg1))
 	assert.Nil(t, err)
 	assert.NotNil(t, certOrg1)
@@ -241,7 +241,7 @@ func TestTLSCAConfig(t *testing.T) {
 	assert.NotNil(t, tlsCertPool.certsByName)
 
 	originalLength := len(tlsCertPool.certs)
-	//Try again with same cert
+	// Try again with same cert
 	tlsCertPool.Add(goodCert)
 	_, err = tlsCertPool.Get()
 	assert.NoError(t, err, "TLS CA cert pool fetch failed")

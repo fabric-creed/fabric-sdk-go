@@ -12,11 +12,11 @@ package signer
 
 import (
 	"crypto"
-	"crypto/x509"
 	"io"
 
 	"github.com/pkg/errors"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 )
 

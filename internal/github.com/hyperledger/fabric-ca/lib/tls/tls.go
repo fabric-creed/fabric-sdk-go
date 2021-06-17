@@ -23,6 +23,7 @@ package tls
 import (
 	"crypto/tls"
 	"crypto/x509"
+	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/utils"
 	"time"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
@@ -76,7 +77,7 @@ func GetClientTLSConfig(cfg *ClientTLSConfig, csp core.CryptoSuite) (*tls.Config
 			return nil, err
 		}
 
-		certs = append(certs, *clientCert)
+		certs = append(certs, utils.CopyGMTLSCertificateToTLSCertificate(*clientCert))
 	} else {
 		log.Debug("Client TLS certificate and/or key file not provided")
 	}

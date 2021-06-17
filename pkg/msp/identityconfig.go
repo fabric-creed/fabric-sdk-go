@@ -7,7 +7,6 @@ SPDX-License-Identifier: Apache-2.0
 package msp
 
 import (
-	"crypto/x509"
 	"encoding/pem"
 	"fmt"
 	"strconv"
@@ -19,8 +18,7 @@ import (
 
 	"regexp"
 
-	"io/ioutil"
-
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
 	"github.com/hyperledger/fabric-sdk-go/pkg/core/config/endpoint"
@@ -28,18 +26,19 @@ import (
 	logApi "github.com/hyperledger/fabric-sdk-go/pkg/core/logging/api"
 	fabImpl "github.com/hyperledger/fabric-sdk-go/pkg/fab"
 	"github.com/hyperledger/fabric-sdk-go/pkg/util/pathvar"
+	"io/ioutil"
 )
 
 var defaultCAServerSchema = "https"
 var defaultCAServerListenPort = 7054
 
-//ConfigFromBackend returns identity config implementation of given backend
+// ConfigFromBackend returns identity config implementation of given backend
 func ConfigFromBackend(coreBackend ...core.ConfigBackend) (msp.IdentityConfig, error) {
 
-	//create identity config
+	// create identity config
 	config := &IdentityConfig{backend: lookup.New(coreBackend...)}
 
-	//preload config identities
+	// preload config identities
 	err := config.loadIdentityConfigEntities()
 	if err != nil {
 		return nil, errors.WithMessage(err, "failed to create identity config from backends")
@@ -59,18 +58,18 @@ type IdentityConfig struct {
 	tlsCertPool         commtls.CertPool
 }
 
-//entityMatchers for identity configuration
+// entityMatchers for identity configuration
 type entityMatchers struct {
 	matchers map[string][]MatchConfig
 }
 
-//matcher entry mapping regex to match config
+// matcher entry mapping regex to match config
 type matcherEntry struct {
 	regex       *regexp.Regexp
 	matchConfig MatchConfig
 }
 
-//identityConfigEntity contains all config definitions needed
+// identityConfigEntity contains all config definitions needed
 type identityConfigEntity struct {
 	Client                 ClientConfig
 	Organizations          map[string]fabImpl.OrganizationConfig
@@ -86,9 +85,9 @@ type ClientConfig struct {
 	CredentialStore msp.CredentialStoreType
 }
 
-//ClientTLSConfig defines client TLS configuration in identity config
+// ClientTLSConfig defines client TLS configuration in identity config
 type ClientTLSConfig struct {
-	//Client TLS information
+	// Client TLS information
 	Client         endpoint.TLSKeyPair
 	SystemCertPool bool
 }
@@ -116,7 +115,7 @@ type MatchConfig struct {
 	// this is used for Name mapping instead of hostname mappings
 	MappedName string
 
-	//IgnoreEndpoint option to exclude given entity from any kind of search or from entity list
+	// IgnoreEndpoint option to exclude given entity from any kind of search or from entity list
 	IgnoreEndpoint bool
 }
 
@@ -131,21 +130,21 @@ func (c *IdentityConfig) CAConfig(caID string) (*msp.CAConfig, bool) {
 	return cfg, ok
 }
 
-//CAClientCert read configuration for the fabric CA client cert bytes for given org
+// CAClientCert read configuration for the fabric CA client cert bytes for given org
 func (c *IdentityConfig) CAClientCert(caID string) ([]byte, bool) {
 	cfg, ok := c.caConfigs[strings.ToLower(caID)]
 	if ok {
-		//for now, we're only loading the first Cert Authority by default.
+		// for now, we're only loading the first Cert Authority by default.
 		return cfg.TLSCAClientCert, true
 	}
 	return nil, false
 }
 
-//CAClientKey read configuration for the fabric CA client key bytes for given org
+// CAClientKey read configuration for the fabric CA client key bytes for given org
 func (c *IdentityConfig) CAClientKey(caID string) ([]byte, bool) {
 	cfg, ok := c.caConfigs[strings.ToLower(caID)]
 	if ok {
-		//for now, we're only loading the first Cert Authority by default.
+		// for now, we're only loading the first Cert Authority by default.
 		return cfg.TLSCAClientKey, true
 	}
 	return nil, false
@@ -156,7 +155,7 @@ func (c *IdentityConfig) CAClientKey(caID string) ([]byte, bool) {
 func (c *IdentityConfig) CAServerCerts(caID string) ([][]byte, bool) {
 	cfg, ok := c.caConfigs[strings.ToLower(caID)]
 	if ok {
-		//for now, we're only loading the first Cert Authority by default.
+		// for now, we're only loading the first Cert Authority by default.
 		return cfg.TLSCAServerCerts, true
 	}
 	return nil, false
@@ -179,7 +178,7 @@ func (c *IdentityConfig) CredentialStorePath() string {
 	return c.credentialStorePath
 }
 
-//loadIdentityConfigEntities loads config entities and dictionaries for searches
+// loadIdentityConfigEntities loads config entities and dictionaries for searches
 func (c *IdentityConfig) loadIdentityConfigEntities() error {
 	configEntity := identityConfigEntity{}
 
@@ -207,7 +206,7 @@ func (c *IdentityConfig) loadIdentityConfigEntities() error {
 		configEntity.CertificateAuthorities[caID] = ca
 	}
 
-	//compile CA matchers
+	// compile CA matchers
 	err = c.compileMatchers()
 	if err != nil {
 		return errors.WithMessage(err, "failed to compile certificate authority matchers")
@@ -263,7 +262,7 @@ func (c *IdentityConfig) loadTLSCertPool(ce *identityConfigEntity) error {
 		}
 	}
 
-	//update cert pool
+	// update cert pool
 	if _, err := c.tlsCertPool.Get(); err != nil {
 		return errors.WithMessage(err, "cert pool load failed")
 	}
@@ -294,15 +293,15 @@ func appendCertsFromPEM(c commtls.CertPool, pemCerts []byte) (ok bool) {
 	return
 }
 
-//loadClientTLSConfig pre-loads all TLSConfig bytes in client config
+// loadClientTLSConfig pre-loads all TLSConfig bytes in client config
 func (c *IdentityConfig) loadClientTLSConfig(configEntity *identityConfigEntity) error {
-	//Clients Config
-	//resolve paths and org name
+	// Clients Config
+	// resolve paths and org name
 	configEntity.Client.Organization = strings.ToLower(configEntity.Client.Organization)
 	configEntity.Client.TLSCerts.Client.Key.Path = pathvar.Subst(configEntity.Client.TLSCerts.Client.Key.Path)
 	configEntity.Client.TLSCerts.Client.Cert.Path = pathvar.Subst(configEntity.Client.TLSCerts.Client.Cert.Path)
 
-	//pre load client key and cert bytes
+	// pre load client key and cert bytes
 	err := configEntity.Client.TLSCerts.Client.Key.LoadBytes()
 	if err != nil {
 		return errors.WithMessage(err, "failed to load client key")
@@ -325,15 +324,15 @@ func (c *IdentityConfig) loadClientTLSConfig(configEntity *identityConfigEntity)
 	return nil
 }
 
-//loadCATLSConfig pre-loads all TLSConfig bytes in certificate authorities
+// loadCATLSConfig pre-loads all TLSConfig bytes in certificate authorities
 func (c *IdentityConfig) loadCATLSConfig(configEntity *identityConfigEntity) error {
-	//CA Config
+	// CA Config
 	for ca, caConfig := range configEntity.CertificateAuthorities {
-		//resolve paths
+		// resolve paths
 		caConfig.TLSCACerts.Path = pathvar.Subst(caConfig.TLSCACerts.Path)
 		caConfig.TLSCACerts.Client.Key.Path = pathvar.Subst(caConfig.TLSCACerts.Client.Key.Path)
 		caConfig.TLSCACerts.Client.Cert.Path = pathvar.Subst(caConfig.TLSCACerts.Client.Cert.Path)
-		//pre load key and cert bytes
+		// pre load key and cert bytes
 		err := caConfig.TLSCACerts.Client.Key.LoadBytes()
 		if err != nil {
 			return errors.WithMessage(err, "failed to load ca key")
@@ -462,14 +461,14 @@ func (c *IdentityConfig) compileMatchers() error {
 
 func (c *IdentityConfig) tryMatchingCAConfig(configEntity *identityConfigEntity, caID string) (*CAConfig, bool) {
 
-	//loop over certAuthorityEntityMatchers to find the matching CA Config
+	// loop over certAuthorityEntityMatchers to find the matching CA Config
 	for _, matcher := range c.caMatchers {
 		if matcher.regex.MatchString(caID) {
 			return c.findMatchingCAConfig(configEntity, caID, matcher)
 		}
 	}
 
-	//Direct lookup, if no caMatchers are configured or no matcher matched
+	// Direct lookup, if no caMatchers are configured or no matcher matched
 	caConfig, ok := configEntity.CertificateAuthorities[strings.ToLower(caID)]
 	if !ok {
 		return nil, false
@@ -494,7 +493,7 @@ func (c *IdentityConfig) findMatchingCAConfig(configEntity *identityConfigEntity
 		mappedHost = matcher.regex.ReplaceAllString(caID, mappedHost)
 	}
 
-	//Get the certAuthorityMatchConfig from mapped host
+	// Get the certAuthorityMatchConfig from mapped host
 	caConfig, ok := configEntity.CertificateAuthorities[strings.ToLower(mappedHost)]
 	if !ok {
 		return nil, false
@@ -502,7 +501,7 @@ func (c *IdentityConfig) findMatchingCAConfig(configEntity *identityConfigEntity
 
 	if matcher.matchConfig.URLSubstitutionExp != "" {
 		caConfig.URL = matcher.matchConfig.URLSubstitutionExp
-		//check for regex replace '$'
+		// check for regex replace '$'
 		if strings.Contains(caConfig.URL, "$") {
 			caConfig.URL = matcher.regex.ReplaceAllString(caID, caConfig.URL)
 		}
@@ -512,10 +511,10 @@ func (c *IdentityConfig) findMatchingCAConfig(configEntity *identityConfigEntity
 		caConfig.GRPCOptions = make(map[string]interface{})
 	}
 
-	//SSLTargetOverrideURLSubstitutionExp if found use from entity matcher otherwise use from mapped host
+	// SSLTargetOverrideURLSubstitutionExp if found use from entity matcher otherwise use from mapped host
 	if matcher.matchConfig.SSLTargetOverrideURLSubstitutionExp != "" {
 		hostOverride := matcher.matchConfig.SSLTargetOverrideURLSubstitutionExp
-		//check for regex replace '$'
+		// check for regex replace '$'
 		if strings.Contains(hostOverride, "$") {
 			hostOverride = matcher.regex.ReplaceAllString(caID, hostOverride)
 		}

@@ -10,12 +10,12 @@ import (
 	"crypto/ecdsa"
 	"crypto/rand"
 	"crypto/sha256"
-	"crypto/x509"
 	"encoding/pem"
 	"fmt"
 	"net"
 	"sync"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/golang/protobuf/proto"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/discovery"
@@ -162,7 +162,7 @@ func (m *MockEndorserServer) SetMockPeer(mPeer *MockPeer) {
 }
 
 func (m *MockEndorserServer) registerDiscoveryAndDeliveryServers(peerAddress string) {
-	//register DiscoverService and DeliveryService
+	// register DiscoverService and DeliveryService
 	discoverServer := discmocks.NewServer(
 		discmocks.WithLocalPeers(
 			&discmocks.MockDiscoveryPeerEndpoint{

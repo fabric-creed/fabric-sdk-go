@@ -7,7 +7,6 @@ SPDX-License-Identifier: Apache-2.0
 package mocks
 
 import (
-	"crypto/tls"
 	"path/filepath"
 	"time"
 
@@ -15,8 +14,8 @@ import (
 	"github.com/hyperledger/fabric-sdk-go/pkg/core/config/endpoint"
 	"github.com/hyperledger/fabric-sdk-go/test/metadata"
 
-	"crypto/x509"
-
+	"github.com/cetcxinlian/cryptogm/tls"
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/test/mockfab"
@@ -109,22 +108,22 @@ func (c *MockConfig) CAConfig(org string) (*msp.CAConfig, bool) {
 	return &caConfig, true
 }
 
-//CAServerCerts Read configuration option for the server certificates for given org
+// CAServerCerts Read configuration option for the server certificates for given org
 func (c *MockConfig) CAServerCerts(org string) ([][]byte, bool) {
 	return nil, false
 }
 
-//CAClientKey Read configuration option for the fabric CA client key for given org
+// CAClientKey Read configuration option for the fabric CA client key for given org
 func (c *MockConfig) CAClientKey(org string) ([]byte, bool) {
 	return nil, false
 }
 
-//CAClientCert Read configuration option for the fabric CA client cert for given org
+// CAClientCert Read configuration option for the fabric CA client cert for given org
 func (c *MockConfig) CAClientCert(org string) ([]byte, bool) {
 	return nil, false
 }
 
-//Timeout not implemented
+// Timeout not implemented
 func (c *MockConfig) Timeout(arg fab.TimeoutType) time.Duration {
 	return time.Second * 10
 }
@@ -175,7 +174,7 @@ func (c *MockConfig) SecurityLevel() int {
 
 }
 
-//SecurityProviderLibPath will be set only if provider is PKCS11
+// SecurityProviderLibPath will be set only if provider is PKCS11
 func (c *MockConfig) SecurityProviderLibPath() string {
 	return ""
 }
@@ -186,22 +185,22 @@ func (c *MockConfig) OrderersConfig() []fab.OrdererConfig {
 	return []fab.OrdererConfig{*oConfig}
 }
 
-//SetCustomNetworkPeerCfg sets custom orderer config for unit-tests
+// SetCustomNetworkPeerCfg sets custom orderer config for unit-tests
 func (c *MockConfig) SetCustomNetworkPeerCfg(customNetworkPeerCfg []fab.NetworkPeer) {
 	c.customNetworkPeerCfg = customNetworkPeerCfg
 }
 
-//SetCustomPeerCfg sets custom orderer config for unit-tests
+// SetCustomPeerCfg sets custom orderer config for unit-tests
 func (c *MockConfig) SetCustomPeerCfg(customPeerCfg *fab.PeerConfig) {
 	c.customPeerCfg = customPeerCfg
 }
 
-//SetCustomOrdererCfg sets custom orderer config for unit-tests
+// SetCustomOrdererCfg sets custom orderer config for unit-tests
 func (c *MockConfig) SetCustomOrdererCfg(customOrdererCfg *fab.OrdererConfig) {
 	c.customOrdererCfg = customOrdererCfg
 }
 
-//SetCustomRandomOrdererCfg sets custom random orderer config for unit-tests
+// SetCustomRandomOrdererCfg sets custom random orderer config for unit-tests
 func (c *MockConfig) SetCustomRandomOrdererCfg(customRandomOrdererCfg *fab.OrdererConfig) {
 	c.customRandomOrdererCfg = customRandomOrdererCfg
 }
@@ -315,12 +314,12 @@ func (c *MockConfig) SecurityProviderLabel() string {
 	return ""
 }
 
-//SecurityProviderPin ...
+// SecurityProviderPin ...
 func (c *MockConfig) SecurityProviderPin() string {
 	return ""
 }
 
-//SoftVerify flag
+// SoftVerify flag
 func (c *MockConfig) SoftVerify() bool {
 	return false
 }

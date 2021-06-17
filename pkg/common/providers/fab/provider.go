@@ -8,9 +8,9 @@ package fab
 
 import (
 	reqContext "context"
-	"crypto/tls"
 	"time"
 
+	"github.com/cetcxinlian/cryptogm/tls"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/options"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
@@ -89,7 +89,7 @@ type CommManager interface {
 	ReleaseConn(conn *grpc.ClientConn)
 }
 
-//EndpointConfig contains endpoint network configurations
+// EndpointConfig contains endpoint network configurations
 type EndpointConfig interface {
 	Timeout(TimeoutType) time.Duration
 	OrderersConfig() []OrdererConfig

@@ -12,7 +12,6 @@ package msp
 
 import (
 	"bytes"
-	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/asn1"
 	"math/big"
@@ -20,6 +19,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
+	"github.com/cetcxinlian/cryptogm/x509"
 )
 
 func (msp *bccspmsp) validateIdentity(id *identity) error {

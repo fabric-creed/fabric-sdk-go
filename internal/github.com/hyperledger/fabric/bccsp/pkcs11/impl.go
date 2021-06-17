@@ -12,9 +12,9 @@ package pkcs11
 
 import (
 	"crypto/ecdsa"
-	"crypto/x509"
 	"os"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/sw"
 	flogging "github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
@@ -47,7 +47,7 @@ func New(opts PKCS11Opts, keyStore bccsp.KeyStore) (bccsp.BCCSP, error) {
 		return nil, errors.New("Invalid bccsp.KeyStore instance. It must be different from nil")
 	}
 
-	//Load PKCS11 context handle
+	// Load PKCS11 context handle
 	pkcs11Ctx, err := sdkp11.LoadContextAndLogin(opts.Library, opts.Pin, opts.Label)
 	if err != nil {
 		return nil, errors.Wrapf(err, "Failed initializing PKCS11 context")
@@ -63,7 +63,7 @@ type impl struct {
 
 	pkcs11Ctx  *sdkp11.ContextHandle
 	softVerify bool
-	//Immutable flag makes object immutable
+	// Immutable flag makes object immutable
 	immutable bool
 }
 
@@ -224,8 +224,8 @@ func FindPKCS11Lib() (lib, pin, label string) {
 		pin = "98765432"
 		label = "ForFabric"
 		possibilities := []string{
-			"/usr/lib/softhsm/libsofthsm2.so",                  //Debian
-			"/usr/lib/x86_64-linux-gnu/softhsm/libsofthsm2.so", //Ubuntu
+			"/usr/lib/softhsm/libsofthsm2.so",                  // Debian
+			"/usr/lib/x86_64-linux-gnu/softhsm/libsofthsm2.so", // Ubuntu
 		}
 		for _, path := range possibilities {
 			if _, err := os.Stat(path); !os.IsNotExist(err) {

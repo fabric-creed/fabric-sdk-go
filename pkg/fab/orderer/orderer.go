@@ -8,10 +8,10 @@ package orderer
 
 import (
 	reqContext "context"
-	"crypto/x509"
 	"io"
 	"time"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/multi"
 	"github.com/pkg/errors"
 	"github.com/spf13/cast"
@@ -76,7 +76,7 @@ func New(config fab.EndpointConfig, opts ...Option) (*Orderer, error) {
 	}
 	grpcOpts = append(grpcOpts, grpc.WithDefaultCallOptions(grpc.WaitForReady(!orderer.failFast)))
 	if endpoint.AttemptSecured(orderer.url, orderer.allowInsecure) {
-		//tls config
+		// tls config
 		tlsConfig, err := comm.TLSConfig(orderer.tlsCACert, orderer.serverName, config)
 		if err != nil {
 			return nil, err
@@ -144,10 +144,10 @@ func FromOrdererConfig(ordererCfg *fab.OrdererConfig) Option {
 		o.tlsCACert = ordererCfg.TLSCACert
 
 		if ordererCfg.GRPCOptions["allow-insecure"] == false {
-			//verify if certificate was expired or not yet valid
+			// verify if certificate was expired or not yet valid
 			err := verifier.ValidateCertificateDates(o.tlsCACert)
 			if err != nil {
-				//log this error
+				// log this error
 				logger.Warn(err)
 			}
 		}

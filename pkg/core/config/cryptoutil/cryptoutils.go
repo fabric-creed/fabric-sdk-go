@@ -9,11 +9,11 @@ package cryptoutil
 import (
 	"crypto"
 	"crypto/ecdsa"
-	"crypto/tls"
-	"crypto/x509"
 	"encoding/pem"
 	"io"
 
+	"github.com/cetcxinlian/cryptogm/tls"
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/pkg/errors"

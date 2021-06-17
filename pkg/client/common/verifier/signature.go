@@ -8,9 +8,9 @@ SPDX-License-Identifier: Apache-2.0
 package verifier
 
 import (
-	"crypto/x509"
 	"time"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/status"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
@@ -63,7 +63,7 @@ func (v *Signature) Match(response []*fab.TransactionProposalResponse) error {
 	return nil
 }
 
-//ValidateCertificateDates used to verify if certificate was expired or not valid until later date
+// ValidateCertificateDates used to verify if certificate was expired or not valid until later date
 func ValidateCertificateDates(cert *x509.Certificate) error {
 	if cert == nil {
 		return nil
@@ -78,7 +78,7 @@ func ValidateCertificateDates(cert *x509.Certificate) error {
 	return nil
 }
 
-//VerifyPeerCertificate verifies raw certs and chain certs for expiry and not yet valid dates
+// VerifyPeerCertificate verifies raw certs and chain certs for expiry and not yet valid dates
 func VerifyPeerCertificate(rawCerts [][]byte, verifiedChains [][]*x509.Certificate) error {
 	for _, chaincert := range rawCerts {
 		cert, err := x509.ParseCertificate(chaincert)
@@ -88,7 +88,7 @@ func VerifyPeerCertificate(rawCerts [][]byte, verifiedChains [][]*x509.Certifica
 		if cert != nil {
 			err = ValidateCertificateDates(cert)
 			if err != nil {
-				//cert is expired or not valid
+				// cert is expired or not valid
 				logger.Warn(err.Error())
 				return err
 			}
@@ -98,7 +98,7 @@ func VerifyPeerCertificate(rawCerts [][]byte, verifiedChains [][]*x509.Certifica
 		for _, cert := range certs {
 			err := ValidateCertificateDates(cert)
 			if err != nil {
-				//cert is expired or not valid
+				// cert is expired or not valid
 				logger.Warn(err.Error())
 				return err
 			}

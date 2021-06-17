@@ -7,13 +7,13 @@ SPDX-License-Identifier: Apache-2.0
 package endpoint
 
 import (
-	"crypto/x509"
 	"encoding/pem"
 	"io/ioutil"
 	"strings"
 
 	"regexp"
 
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/pkg/errors"
 )
 
@@ -39,7 +39,7 @@ func ToAddress(url string) string {
 	return url
 }
 
-//AttemptSecured is a utility function which verifies URL and returns if secured connections needs to established
+// AttemptSecured is a utility function which verifies URL and returns if secured connections needs to established
 // for protocol 'grpcs' in URL returns true
 // for protocol 'grpc' in URL returns false
 // for no protocol mentioned, returns !allowInSecure
@@ -60,7 +60,7 @@ type MutualTLSConfig struct {
 	// Certfiles root certificates for TLS validation (Comma separated path list)
 	Path string
 
-	//Client TLS information
+	// Client TLS information
 	Client TLSKeyPair
 }
 
@@ -80,7 +80,7 @@ type TLSConfig struct {
 	Path string
 	// Certificate actual content
 	Pem string
-	//bytes from Pem/Path
+	// bytes from Pem/Path
 	bytes []byte
 }
 
@@ -89,8 +89,8 @@ func (cfg *TLSConfig) Bytes() []byte {
 	return cfg.bytes
 }
 
-//LoadBytes preloads bytes from Pem/Path
-//Pem takes precedence over Path
+// LoadBytes preloads bytes from Pem/Path
+// Pem takes precedence over Path
 func (cfg *TLSConfig) LoadBytes() error {
 	var err error
 	if cfg.Pem != "" {
@@ -118,6 +118,6 @@ func (cfg *TLSConfig) TLSCert() (*x509.Certificate, bool, error) {
 		return pub, true, nil
 	}
 
-	//no cert found and there is no error
+	// no cert found and there is no error
 	return nil, false, nil
 }

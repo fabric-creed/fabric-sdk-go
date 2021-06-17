@@ -12,10 +12,11 @@ package keyutil
 
 import (
 	"crypto/ecdsa"
-	"crypto/x509"
 	"encoding/pem"
 	"errors"
 	"fmt"
+
+	"github.com/cetcxinlian/cryptogm/x509"
 )
 
 func PrivateKeyToDER(privateKey *ecdsa.PrivateKey) ([]byte, error) {

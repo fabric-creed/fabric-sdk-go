@@ -147,7 +147,7 @@ func (c *Client) initHTTPClient(serverName string) error {
 		}
 		// set the default ciphers
 		tlsConfig.CipherSuites = tls.DefaultCipherSuites
-		//set the host name override
+		// set the host name override
 		tlsConfig.ServerName = serverName
 
 		tr.TLSClientConfig = tlsConfig
@@ -376,7 +376,7 @@ func (c *Client) NewIdentity(creds []credential.Credential) (*Identity, error) {
 		return NewIdentity(c, name, creds), nil
 	}
 
-	//TODO: Get the enrollment ID from the creds...they all should return same value
+	// TODO: Get the enrollment ID from the creds...they all should return same value
 	// for i := 1; i < len(creds); i++ {
 	// 	localid, err := creds[i].EnrollmentID()
 	// 	if err != nil {

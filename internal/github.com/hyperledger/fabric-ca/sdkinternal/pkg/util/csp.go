@@ -23,16 +23,17 @@ package util
 import (
 	"crypto"
 	"crypto/ecdsa"
-	"crypto/tls"
-	"crypto/x509"
 	"encoding/hex"
 	"encoding/pem"
 	"fmt"
+	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/utils"
 	"io/ioutil"
 	"strings"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
 
+	"github.com/cetcxinlian/cryptogm/tls"
+	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/cloudflare/cfssl/csr"
 	"github.com/cloudflare/cfssl/helpers"
 	factory "github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
@@ -108,8 +109,8 @@ func GetSignerFromCertFile(certFile string, csp core.CryptoSuite) (core.Key, cry
 		return nil, nil, nil, err
 	}
 	// Get the signer from the cert
-	key, cspSigner, err := GetSignerFromCert(parsedCa, csp)
-	return key, cspSigner, parsedCa, err
+	key, cspSigner, err := GetSignerFromCert(utils.CopyX509ToGMx509(parsedCa), csp)
+	return key, cspSigner, utils.CopyX509ToGMx509(parsedCa), err
 }
 
 // BCCSPKeyRequestGenerate generates keys through BCCSP
