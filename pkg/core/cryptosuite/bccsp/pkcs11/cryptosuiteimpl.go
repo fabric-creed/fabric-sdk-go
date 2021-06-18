@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package pkcs11
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	bccspPkcs11 "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/pkcs11"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/pkcs11"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite/bccsp/wrapper"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	bccspPkcs11 "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/factory/pkcs11"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/pkcs11"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite/bccsp/wrapper"
 	"github.com/pkg/errors"
 )
 

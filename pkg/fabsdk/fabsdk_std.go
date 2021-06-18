@@ -10,7 +10,7 @@ SPDX-License-Identifier: Apache-2.0
 package fabsdk
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/metrics"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/metrics"
 )
 
 func (sdk *FabricSDK) initMetrics(config *configs) {

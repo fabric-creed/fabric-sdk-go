@@ -9,12 +9,12 @@ SPDX-License-Identifier: Apache-2.0
 package dynamicdiscovery
 
 import (
-	contextAPI "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	pfab "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	fabDiscovery "github.com/JieWaZi/fabric-sdk-go/pkg/fab/discovery"
-	discmocks "github.com/JieWaZi/fabric-sdk-go/pkg/fab/discovery/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	mspmocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
+	contextAPI "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	pfab "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	fabDiscovery "github.com/fabric-creed/fabric-sdk-go/pkg/fab/discovery"
+	discmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/discovery/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"

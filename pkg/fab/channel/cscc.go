@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package channel
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 const (

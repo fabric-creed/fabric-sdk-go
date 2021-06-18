@@ -16,7 +16,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/x509"
 )
 
 func derToPrivateKey(der []byte) (key interface{}, err error) {

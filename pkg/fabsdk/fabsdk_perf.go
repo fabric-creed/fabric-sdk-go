@@ -9,9 +9,9 @@ SPDX-License-Identifier: Apache-2.0
 package fabsdk
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/operations"
-	flogging "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/metrics"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/operations"
+	flogging "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/metrics"
 )
 
 // initMetrics will initialize the Go SDK's metric's system instance to allow capturing metrics data by the SDK clients.

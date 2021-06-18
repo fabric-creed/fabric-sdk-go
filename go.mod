@@ -2,16 +2,17 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-module github.com/JieWaZi/fabric-sdk-go
+module github.com/fabric-creed/fabric-sdk-go
 
 require (
 	github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible
-	github.com/cetcxinlian/cryptogm v0.0.0-20200806165024-f3ca35db27b0 // indirect
 	github.com/cloudflare/cfssl v1.4.1
+	github.com/fabric-creed/cryptogm v0.0.0-20210618081101-bc9b0e38cb8d
 	github.com/go-kit/kit v0.10.0
 	github.com/golang/mock v1.4.3
 	github.com/golang/protobuf v1.3.3
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/hyperledger/fabric v2.1.1+incompatible
 	github.com/hyperledger/fabric-config v0.0.5
 	github.com/hyperledger/fabric-lib-go v1.0.0
 	github.com/hyperledger/fabric-protos-go v0.0.0-20200707132912-fee30f3ccd23

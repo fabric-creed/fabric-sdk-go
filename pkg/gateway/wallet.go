@@ -11,9 +11,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	pb_msp "github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
 	"github.com/pkg/errors"
 )
 

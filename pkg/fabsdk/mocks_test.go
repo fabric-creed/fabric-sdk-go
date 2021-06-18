@@ -9,17 +9,17 @@ SPDX-License-Identifier: Apache-2.0
 package fabsdk
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/modlog"
-	fabImpl "github.com/JieWaZi/fabric-sdk-go/pkg/fab"
-	sdkApi "github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/api"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/factory/defcore"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/factory/defmsp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/factory/defsvc"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/modlog"
+	fabImpl "github.com/fabric-creed/fabric-sdk-go/pkg/fab"
+	sdkApi "github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/factory/defcore"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/factory/defmsp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/factory/defsvc"
 	"github.com/pkg/errors"
 )
 

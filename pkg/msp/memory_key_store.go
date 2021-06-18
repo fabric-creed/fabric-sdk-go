@@ -11,7 +11,7 @@ import (
 
 	"fmt"
 
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 // MemoryKeyStore is in-memory implementation of BCCSP key store

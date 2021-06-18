@@ -13,7 +13,7 @@ import (
 
 	"google.golang.org/grpc/keepalive"
 
-	fabmocks "github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
+	fabmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"

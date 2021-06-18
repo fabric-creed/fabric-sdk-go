@@ -19,8 +19,8 @@ import (
 	"crypto/elliptic"
 	"crypto/sha256"
 	"fmt"
-	"github.com/cetcxinlian/cryptogm/sm2"
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/sm2"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/hyperledger/fabric/bccsp"
 )
 

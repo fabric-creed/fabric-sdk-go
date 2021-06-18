@@ -10,11 +10,11 @@ package verifier
 import (
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

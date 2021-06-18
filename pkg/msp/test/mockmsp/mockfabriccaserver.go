@@ -12,11 +12,11 @@ import (
 	"time"
 
 	cfsslapi "github.com/cloudflare/cfssl/api"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
 )
 
 // Matching key-cert pair. On enroll, the key will be

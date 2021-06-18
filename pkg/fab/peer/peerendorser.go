@@ -13,7 +13,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/x509"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/keepalive"
@@ -21,13 +21,13 @@ import (
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/comm"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/endpoint"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
 )
 
 const (

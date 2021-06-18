@@ -10,13 +10,13 @@ import (
 	"sync"
 	"time"
 
-	discclient "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
-	coptions "github.com/JieWaZi/fabric-sdk-go/pkg/common/options"
-	contextAPI "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	fabdiscovery "github.com/JieWaZi/fabric-sdk-go/pkg/fab/discovery"
-	peerImpl "github.com/JieWaZi/fabric-sdk-go/pkg/fab/peer"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/util/concurrent/lazyref"
+	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
+	coptions "github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
+	contextAPI "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	fabdiscovery "github.com/fabric-creed/fabric-sdk-go/pkg/fab/discovery"
+	peerImpl "github.com/fabric-creed/fabric-sdk-go/pkg/fab/peer"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/util/concurrent/lazyref"
 	"github.com/pkg/errors"
 )
 

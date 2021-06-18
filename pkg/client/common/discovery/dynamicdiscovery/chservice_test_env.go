@@ -9,8 +9,8 @@ SPDX-License-Identifier: Apache-2.0
 package dynamicdiscovery
 
 import (
-	contextAPI "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/discovery"
+	contextAPI "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/discovery"
 )
 
 // SetClientProvider overrides the discovery client provider for unit tests

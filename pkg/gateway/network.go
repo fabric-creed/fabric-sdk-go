@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package gateway
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/channel"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/event"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/event"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

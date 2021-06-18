@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package preferpeer
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/lbp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/peerresolver"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/lbp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/peerresolver"
 )
 
 type params struct {

@@ -13,10 +13,10 @@ package x509
 import (
 	"fmt"
 
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/attrmgr"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/attrmgr"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/pkg/errors"
 )
 

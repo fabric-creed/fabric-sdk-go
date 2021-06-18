@@ -21,14 +21,14 @@ import (
 	"strings"
 	"time"
 
-	fabricCaUtil "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	mspProvider "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/api"
+	fabricCaUtil "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	mspProvider "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/api"
 	"github.com/pkg/errors"
 )
 

@@ -9,14 +9,14 @@ package dispatcher
 import (
 	"time"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/options"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/lbp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/peerresolver"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/peerresolver/balanced"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/peerresolver/minblockheight"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/peerresolver/preferorg"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/lbp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/peerresolver"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/peerresolver/balanced"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/peerresolver/minblockheight"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/peerresolver/preferorg"
 )
 
 const (

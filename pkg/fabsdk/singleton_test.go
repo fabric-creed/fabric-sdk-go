@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	configImpl "github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/modlog"
-	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	configImpl "github.com/fabric-creed/fabric-sdk-go/pkg/core/config"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/modlog"
+	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 )
 
 func TestDefLoggerFactory(t *testing.T) {

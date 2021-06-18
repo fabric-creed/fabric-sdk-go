@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package msp
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	commtls "github.com/JieWaZi/fabric-sdk-go/pkg/core/config/comm/tls"
-	logApi "github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	commtls "github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm/tls"
+	logApi "github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
 )
 
 // Context is the context required by MSP services

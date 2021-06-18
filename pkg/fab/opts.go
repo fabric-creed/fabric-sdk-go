@@ -11,9 +11,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	commtls "github.com/JieWaZi/fabric-sdk-go/pkg/core/config/comm/tls"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	commtls "github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm/tls"
 )
 
 // EndpointConfigOptions represents EndpointConfig interface with overridable interface functions

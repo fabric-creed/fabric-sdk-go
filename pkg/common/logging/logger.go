@@ -15,9 +15,9 @@ package logging
 import (
 	"sync"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/metadata"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/modlog"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/modlog"
 )
 
 //Logger basic implementation of api.Logger interface

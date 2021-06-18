@@ -13,11 +13,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
 	"github.com/stretchr/testify/assert"
 
-	mspmocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
+	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 )
 
 const (

@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
-	fabImpl "github.com/JieWaZi/fabric-sdk-go/pkg/fab"
-	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config"
+	fabImpl "github.com/fabric-creed/fabric-sdk-go/pkg/fab"
+	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

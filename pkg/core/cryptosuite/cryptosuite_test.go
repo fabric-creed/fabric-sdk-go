@@ -10,7 +10,7 @@ import (
 
 	"sync/atomic"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
 	"github.com/stretchr/testify/assert"
 )
 

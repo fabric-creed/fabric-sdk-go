@@ -11,8 +11,8 @@ import (
 
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/deliverclient/connection"
-	servicemocks "github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/service/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/deliverclient/connection"
+	servicemocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/service/mocks"
 )
 
 // NewBlockEvent returns a new mock block event initialized with the given block

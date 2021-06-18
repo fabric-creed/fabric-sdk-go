@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/x509"
 )
 
 func (msp *bccspmsp) validateIdentity(id *identity) error {

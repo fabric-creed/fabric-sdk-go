@@ -10,13 +10,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/options"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/api"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/peerresolver"
-	esdispatcher "github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/service/dispatcher"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/peerresolver"
+	esdispatcher "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/service/dispatcher"
 	"github.com/pkg/errors"
 )
 

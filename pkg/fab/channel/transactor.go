@@ -12,11 +12,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/JieWaZi/fabric-sdk-go/pkg/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/endpoint"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/txn"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/fabric-creed/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/txn"
 )
 
 // Transactor enables sending transactions and transaction proposals on the channel.

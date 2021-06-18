@@ -9,9 +9,9 @@ package balancer
 import (
 	"math/rand"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/util/concurrent/rollingcounter"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/util/concurrent/rollingcounter"
 )
 
 var logger = logging.NewLogger("fabsdk/client")

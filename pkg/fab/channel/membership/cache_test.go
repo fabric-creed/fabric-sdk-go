@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/util/concurrent/lazyref"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/util/concurrent/lazyref"
 	mb "github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

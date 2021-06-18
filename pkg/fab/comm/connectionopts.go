@@ -10,9 +10,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/options"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/spf13/cast"
 	"google.golang.org/grpc/keepalive"
 )

@@ -15,9 +15,9 @@ import (
 	"encoding/pem"
 	"net/http"
 
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
 	"github.com/pkg/errors"
 )
 

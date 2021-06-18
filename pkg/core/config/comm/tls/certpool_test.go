@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

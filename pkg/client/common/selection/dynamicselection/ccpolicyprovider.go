@@ -16,13 +16,13 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/common/ccprovider"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/channel"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/JieWaZi/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/fabric-creed/fabric-sdk-go/pkg/context"
 )
 
 const loggerModule = "fabsdk/client"

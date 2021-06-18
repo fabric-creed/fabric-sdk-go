@@ -10,9 +10,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/modlog"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/testdata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/modlog"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/testdata"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -14,11 +14,11 @@ import (
 	"crypto/ecdsa"
 	"os"
 
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/sw"
-	flogging "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
-	sdkp11 "github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite/common/pkcs11"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/sw"
+	flogging "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	sdkp11 "github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite/common/pkcs11"
 	"github.com/pkg/errors"
 )
 

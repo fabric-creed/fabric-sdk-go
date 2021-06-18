@@ -9,10 +9,10 @@ package mockfab
 import (
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/golang/mock/gomock"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

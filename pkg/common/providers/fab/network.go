@@ -9,8 +9,8 @@ package fab
 import (
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/retry"
 )
 
 // NetworkConfig provides a static definition of endpoint configuration network

@@ -11,16 +11,16 @@ import (
 	reqContext "context"
 	"math/rand"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/multi"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/multi"
 	"github.com/pkg/errors"
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	ctxprovider "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	ctxprovider "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

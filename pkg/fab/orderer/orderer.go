@@ -11,8 +11,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/multi"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/multi"
 	"github.com/pkg/errors"
 	"github.com/spf13/cast"
 	"google.golang.org/grpc"
@@ -22,13 +22,13 @@ import (
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/comm"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/endpoint"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

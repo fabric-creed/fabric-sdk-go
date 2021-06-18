@@ -22,19 +22,19 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/discovery"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/filter"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/discovery"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/filter"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/chconfig"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/chconfig"
 
-	contextImpl "github.com/JieWaZi/fabric-sdk-go/pkg/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/channel"
+	contextImpl "github.com/fabric-creed/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/channel"
 	"github.com/pkg/errors"
 )
 

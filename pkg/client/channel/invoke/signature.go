@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package invoke
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 
 	"github.com/pkg/errors"
 )

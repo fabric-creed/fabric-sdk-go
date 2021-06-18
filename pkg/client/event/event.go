@@ -15,12 +15,12 @@ SPDX-License-Identifier: Apache-2.0
 package event
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/options"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/deliverclient"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/deliverclient/seek"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/deliverclient"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/deliverclient/seek"
 	"github.com/pkg/errors"
 )
 

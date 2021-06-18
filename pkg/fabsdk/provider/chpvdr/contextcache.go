@@ -7,16 +7,16 @@ SPDX-License-Identifier: Apache-2.0
 package chpvdr
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/discovery/dynamicdiscovery"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/discovery/staticdiscovery"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/selection/dynamicselection"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/selection/fabricselection"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/options"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/channel/membership"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/chconfig"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/deliverclient"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/util/concurrent/lazycache"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/discovery/dynamicdiscovery"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/discovery/staticdiscovery"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/dynamicselection"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/fabricselection"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/channel/membership"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/chconfig"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/deliverclient"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/util/concurrent/lazycache"
 	"github.com/pkg/errors"
 )
 

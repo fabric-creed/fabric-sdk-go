@@ -13,7 +13,7 @@ import (
 
 	"regexp"
 
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/pkg/errors"
 )
 

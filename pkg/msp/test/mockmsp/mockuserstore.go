@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package mockmsp
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
 )
 
 // MockUserStore ...

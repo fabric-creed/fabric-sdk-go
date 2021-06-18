@@ -16,11 +16,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/client/credential"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	log "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/client/credential"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	log "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
 	"github.com/pkg/errors"
 )
 

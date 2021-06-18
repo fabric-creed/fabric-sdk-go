@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	contextApi "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/msp/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	contextApi "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/msp/api"
 	"github.com/pkg/errors"
 )
 

@@ -10,16 +10,16 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/endpoint"
-	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
+	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/test/mockfab"
-	commtls "github.com/JieWaZi/fabric-sdk-go/pkg/core/config/comm/tls"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/test/mockfab"
+	commtls "github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm/tls"
 	"github.com/pkg/errors"
 )
 

@@ -20,9 +20,9 @@ package credentials
 
 import (
 	"context"
-	"github.com/cetcxinlian/cryptogm/sm2"
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/sm2"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/x509"
 	"io/ioutil"
 	"net"
 

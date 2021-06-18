@@ -9,7 +9,7 @@ package channel
 import (
 	"strconv"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 const (

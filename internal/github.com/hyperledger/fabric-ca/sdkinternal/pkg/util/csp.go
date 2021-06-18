@@ -26,18 +26,18 @@ import (
 	"encoding/hex"
 	"encoding/pem"
 	"fmt"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/utils"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/utils"
 	"io/ioutil"
 	"strings"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
 
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/cloudflare/cfssl/csr"
 	"github.com/cloudflare/cfssl/helpers"
-	factory "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
-	log "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+	factory "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
+	log "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
 	"github.com/pkg/errors"
 )
 

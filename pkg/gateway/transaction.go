@@ -9,11 +9,11 @@ package gateway
 import (
 	"github.com/hyperledger/fabric-protos-go/peer"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/channel"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/channel/invoke"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel/invoke"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

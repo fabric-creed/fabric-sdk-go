@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"strings"
 
-	discclient "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 // GetProperties extracts the properties from the discovered peer.

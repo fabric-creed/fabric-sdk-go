@@ -9,11 +9,11 @@ package preferorg
 import (
 	"testing"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	clientmocks "github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/peerresolver/minblockheight"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	clientmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/peerresolver/minblockheight"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

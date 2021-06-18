@@ -15,12 +15,12 @@ import (
 
 	"google.golang.org/grpc/keepalive"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/comm"
-	clientdisp "github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/client/dispatcher"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/deliverclient/seek"
-	eventmocks "github.com/JieWaZi/fabric-sdk-go/pkg/fab/events/mocks"
-	fabmocks "github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	mspmocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
+	clientdisp "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/dispatcher"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/deliverclient/seek"
+	eventmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/mocks"
+	fabmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"

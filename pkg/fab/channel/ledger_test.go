@@ -14,12 +14,12 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/multi"
-	contextApi "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	mspmocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/multi"
+	contextApi "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/stretchr/testify/assert"
 )

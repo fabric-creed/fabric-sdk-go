@@ -14,7 +14,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/metrics"
 )
 
 type Collector struct {

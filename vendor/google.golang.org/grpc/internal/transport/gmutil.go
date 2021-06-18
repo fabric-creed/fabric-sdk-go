@@ -3,8 +3,8 @@ package transport
 import (
 	origin "crypto/tls"
 	origX509 "crypto/x509"
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/x509"
 )
 
 func cloneConnectionState(origin *origin.ConnectionState) *tls.ConnectionState {

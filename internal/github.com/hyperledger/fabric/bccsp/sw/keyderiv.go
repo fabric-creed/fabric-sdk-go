@@ -25,10 +25,10 @@ import (
 	"crypto/hmac"
 	"errors"
 	"fmt"
-	"github.com/cetcxinlian/cryptogm/sm2"
+	"github.com/fabric-creed/cryptogm/sm2"
 	"math/big"
 
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 type ecdsaPublicKeyKeyDeriver struct{}

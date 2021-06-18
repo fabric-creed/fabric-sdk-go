@@ -13,7 +13,7 @@ package comm
 import (
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/tls"
 )
 
 // Configuration defaults

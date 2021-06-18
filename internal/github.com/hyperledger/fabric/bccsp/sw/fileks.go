@@ -16,7 +16,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/cetcxinlian/cryptogm/sm2"
+	"github.com/fabric-creed/cryptogm/sm2"
 	"io"
 	"io/ioutil"
 	"os"
@@ -24,7 +24,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 // NewFileBasedKeyStore instantiated a file-based key store at a given position.

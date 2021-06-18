@@ -16,8 +16,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
 )
 
 // bccspCryptoSigner is the BCCSP-based implementation of a crypto.Signer

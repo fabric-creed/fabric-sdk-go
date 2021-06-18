@@ -10,11 +10,11 @@ import (
 	reqContext "context"
 	"time"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/channel/invoke"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/comm"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel/invoke"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 )

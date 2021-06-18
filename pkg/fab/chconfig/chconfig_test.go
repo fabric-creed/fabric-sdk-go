@@ -11,25 +11,25 @@ import (
 	"testing"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/resource"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/resource"
 
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	contextImpl "github.com/JieWaZi/fabric-sdk-go/pkg/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/orderer"
-	mspmocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
-	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	contextImpl "github.com/fabric-creed/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/orderer"
+	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 	"github.com/pkg/errors"
 
 	"strings"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
-	fabImpl "github.com/JieWaZi/fabric-sdk-go/pkg/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config"
+	fabImpl "github.com/fabric-creed/fabric-sdk-go/pkg/fab"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

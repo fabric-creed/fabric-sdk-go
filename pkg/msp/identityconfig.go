@@ -12,20 +12,20 @@ import (
 	"strconv"
 	"strings"
 
-	commtls "github.com/JieWaZi/fabric-sdk-go/pkg/core/config/comm/tls"
+	commtls "github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm/tls"
 
 	"github.com/pkg/errors"
 
 	"regexp"
 
-	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/endpoint"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/lookup"
-	logApi "github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
-	fabImpl "github.com/JieWaZi/fabric-sdk-go/pkg/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/util/pathvar"
+	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/lookup"
+	logApi "github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
+	fabImpl "github.com/fabric-creed/fabric-sdk-go/pkg/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/util/pathvar"
 	"io/ioutil"
 )
 

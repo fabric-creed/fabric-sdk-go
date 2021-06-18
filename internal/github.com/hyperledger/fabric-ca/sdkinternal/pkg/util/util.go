@@ -31,8 +31,8 @@ import (
 	"math/big"
 	mrand "math/rand"
 
-	factory "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
+	factory "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
 
 	"net/http"
 	"os"
@@ -43,7 +43,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/ocsp"
 )

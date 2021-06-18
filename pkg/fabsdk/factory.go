@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package fabsdk
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
-	sdkApi "github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
+	sdkApi "github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/api"
 )
 
 // pkgSuite provides the package factories that create clients and providers

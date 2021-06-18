@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	txnmocks "github.com/JieWaZi/fabric-sdk-go/pkg/client/common/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	fcmocks "github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
+	txnmocks "github.com/fabric-creed/fabric-sdk-go/pkg/client/common/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	fcmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

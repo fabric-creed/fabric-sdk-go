@@ -11,19 +11,19 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
-	coreMocks "github.com/JieWaZi/fabric-sdk-go/pkg/core/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	coreMocks "github.com/fabric-creed/fabric-sdk-go/pkg/core/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite"
-	fabImpl "github.com/JieWaZi/fabric-sdk-go/pkg/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	peerImpl "github.com/JieWaZi/fabric-sdk-go/pkg/fab/peer"
-	mspImpl "github.com/JieWaZi/fabric-sdk-go/pkg/msp"
-	mspmocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite"
+	fabImpl "github.com/fabric-creed/fabric-sdk-go/pkg/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	peerImpl "github.com/fabric-creed/fabric-sdk-go/pkg/fab/peer"
+	mspImpl "github.com/fabric-creed/fabric-sdk-go/pkg/msp"
+	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 )
 
 func TestCreateInfraProvider(t *testing.T) {

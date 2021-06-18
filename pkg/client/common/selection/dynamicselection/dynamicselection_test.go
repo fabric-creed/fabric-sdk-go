@@ -11,14 +11,14 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/common/ccprovider"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/selection/dynamicselection/pgresolver"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/selection/options"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	coptions "github.com/JieWaZi/fabric-sdk-go/pkg/common/options"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/mocks"
-	mspmocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/dynamicselection/pgresolver"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/options"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	coptions "github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 	"github.com/hyperledger/fabric-protos-go/common"
 )
 

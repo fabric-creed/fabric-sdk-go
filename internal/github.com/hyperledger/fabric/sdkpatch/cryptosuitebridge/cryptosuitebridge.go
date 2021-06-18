@@ -14,11 +14,11 @@ import (
 	"crypto"
 	"crypto/ecdsa"
 
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	cspsigner "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/signer"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/utils"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	cspsigner "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/signer"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite"
 )
 
 const (

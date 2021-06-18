@@ -7,16 +7,16 @@ SPDX-License-Identifier: Apache-2.0
 package defcore
 
 import (
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/api"
 
-	cryptosuiteimpl "github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
-	signingMgr "github.com/JieWaZi/fabric-sdk-go/pkg/fab/signingmgr"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/provider/fabpvdr"
+	cryptosuiteimpl "github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	signingMgr "github.com/fabric-creed/fabric-sdk-go/pkg/fab/signingmgr"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/provider/fabpvdr"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/modlog"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/logging/modlog"
 )
 
 var logger = logging.NewLogger("fabsdk")

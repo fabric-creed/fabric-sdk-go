@@ -3,8 +3,8 @@ package utils
 import (
 	otls "crypto/tls"
 	ox509 "crypto/x509"
-	"github.com/cetcxinlian/cryptogm/tls"
-	"github.com/cetcxinlian/cryptogm/x509"
+	"github.com/fabric-creed/cryptogm/tls"
+	"github.com/fabric-creed/cryptogm/x509"
 )
 
 func CopyX509ToGMx509(cert *ox509.Certificate) *x509.Certificate {

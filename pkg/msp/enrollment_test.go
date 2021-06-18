@@ -13,17 +13,17 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	providersFab "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/msp/api"
-	apimocks "github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmspapi"
-	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	providersFab "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite/bccsp/sw"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/msp/api"
+	apimocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmspapi"
+	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 )
 
 var (

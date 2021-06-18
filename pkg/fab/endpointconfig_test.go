@@ -23,14 +23,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/endpoint"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config/lookup"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/mocks"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/comm"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/util/pathvar"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/lookup"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/mocks"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/util/pathvar"
 )
 
 const (

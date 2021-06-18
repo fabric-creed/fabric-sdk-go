@@ -12,12 +12,12 @@ import (
 	"sync"
 
 	"github.com/hyperledger/fabric-protos-go/discovery"
-	discclient "github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
-	fabcontext "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	corecomm "github.com/JieWaZi/fabric-sdk-go/pkg/core/config/comm"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/comm"
+	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
+	fabcontext "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	corecomm "github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

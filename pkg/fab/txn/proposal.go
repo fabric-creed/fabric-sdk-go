@@ -15,11 +15,11 @@ import (
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/multi"
-	contextApi "github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/context"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/multi"
+	contextApi "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
 )
 
 // CreateChaincodeInvokeProposal creates a proposal for transaction.

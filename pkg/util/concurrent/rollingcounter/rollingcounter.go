@@ -10,7 +10,7 @@ import (
 	"math/rand"
 	"sync/atomic"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 )
 
 var logger = logging.NewLogger("fabsdk/util")

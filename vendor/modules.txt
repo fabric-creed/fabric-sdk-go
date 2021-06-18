@@ -5,7 +5,7 @@ github.com/Knetic/govaluate
 github.com/beorn7/perks/quantile
 # github.com/cespare/xxhash/v2 v2.1.1
 github.com/cespare/xxhash/v2
-# github.com/cetcxinlian/cryptogm v0.0.0-20200806165024-f3ca35db27b0
+# github.com/fabric-creed/cryptogm v0.0.0-20210618074359-03cc1feafb45
 ## explicit
 # github.com/cloudflare/cfssl v1.4.1
 ## explicit

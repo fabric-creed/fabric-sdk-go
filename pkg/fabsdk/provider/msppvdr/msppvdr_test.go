@@ -10,13 +10,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fab"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/fabsdk/factory/defcore"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/msp"
-	"github.com/JieWaZi/fabric-sdk-go/pkg/msp/test/mockmsp"
-	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fab"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/factory/defcore"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/msp"
+	"github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 	"github.com/stretchr/testify/assert"
 )
 
