@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"github.com/fabric-creed/cryptogm/sm2"
 	"github.com/fabric-creed/cryptogm/x509"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 type sm2PrivateKey struct {

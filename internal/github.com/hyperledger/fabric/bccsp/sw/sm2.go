@@ -21,7 +21,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/fabric-creed/cryptogm/sm2"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 	"math/big"
 )
 
