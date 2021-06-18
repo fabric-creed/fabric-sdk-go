@@ -12,9 +12,9 @@ import (
 
 	"sync"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/logging/api"
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/logging/metadata"
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/logging/testdata"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/metadata"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/testdata"
 	"github.com/stretchr/testify/assert"
 )
 

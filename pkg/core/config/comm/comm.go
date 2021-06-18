@@ -9,8 +9,8 @@ package comm
 import (
 	"github.com/cetcxinlian/cryptogm/tls"
 	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/core/cryptosuite"
 	"github.com/pkg/errors"
 )
 

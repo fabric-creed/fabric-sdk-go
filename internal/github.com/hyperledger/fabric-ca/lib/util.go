@@ -17,7 +17,7 @@ import (
 
 	"github.com/cetcxinlian/cryptogm/tls"
 	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
 	"github.com/pkg/errors"
 )
 

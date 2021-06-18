@@ -15,7 +15,7 @@ import (
 
 	"github.com/cetcxinlian/cryptogm/tls"
 	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkinternal/pkg/comm"
+	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkinternal/pkg/comm"
 )
 
 type TLS struct {

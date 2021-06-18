@@ -12,7 +12,7 @@ import (
 	"github.com/cetcxinlian/cryptogm/tls"
 	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/golang/mock/gomock"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

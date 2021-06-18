@@ -10,9 +10,9 @@ import (
 	reqContext "context"
 
 	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/hyperledger/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/spf13/cast"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"

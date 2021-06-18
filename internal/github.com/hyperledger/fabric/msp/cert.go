@@ -31,7 +31,7 @@ import (
 	"time"
 
 	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/utils"
 	"github.com/pkg/errors"
 )
 

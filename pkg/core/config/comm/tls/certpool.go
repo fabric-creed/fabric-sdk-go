@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 
 	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
 )
 
 var logger = logging.NewLogger("fabsdk/core")

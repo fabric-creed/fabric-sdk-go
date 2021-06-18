@@ -9,8 +9,8 @@ package membership
 import (
 	"time"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/hyperledger/fabric-sdk-go/pkg/util/concurrent/lazyref"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/util/concurrent/lazyref"
 	"github.com/pkg/errors"
 )
 

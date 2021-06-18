@@ -10,12 +10,12 @@ import (
 	reqContext "context"
 	"time"
 
+	"github.com/JieWaZi/fabric-sdk-go/pkg/client/channel/invoke"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/fab/comm"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric-sdk-go/pkg/client/channel/invoke"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fab/comm"
 	"github.com/pkg/errors"
 )
 
@@ -26,8 +26,8 @@ type requestOptions struct {
 	TargetSorter  fab.TargetSorter
 	Retry         retry.Opts
 	BeforeRetry   retry.BeforeRetryHandler
-	Timeouts      map[fab.TimeoutType]time.Duration //timeout options for channel client operations
-	ParentContext reqContext.Context                //parent grpc context for channel client operations (query, execute, invokehandler)
+	Timeouts      map[fab.TimeoutType]time.Duration // timeout options for channel client operations
+	ParentContext reqContext.Context                // parent grpc context for channel client operations (query, execute, invokehandler)
 	CCFilter      invoke.CCFilter
 }
 
@@ -53,7 +53,7 @@ type Request struct {
 	IsInit          bool
 }
 
-//Response contains response parameters for query and execute an invocation transaction
+// Response contains response parameters for query and execute an invocation transaction
 type Response struct {
 	Proposal         *fab.TransactionProposal
 	Responses        []*fab.TransactionProposalResponse
@@ -63,7 +63,7 @@ type Response struct {
 	Payload          []byte
 }
 
-//WithTargets allows overriding of the target peers for the request
+// WithTargets allows overriding of the target peers for the request
 func WithTargets(targets ...fab.Peer) RequestOption {
 	return func(ctx context.Client, o *requestOptions) error {
 
@@ -138,7 +138,7 @@ func WithBeforeRetry(beforeRetry retry.BeforeRetryHandler) RequestOption {
 	}
 }
 
-//WithTimeout encapsulates key value pairs of timeout type, timeout duration to Options
+// WithTimeout encapsulates key value pairs of timeout type, timeout duration to Options
 func WithTimeout(timeoutType fab.TimeoutType, timeout time.Duration) RequestOption {
 	return func(ctx context.Client, o *requestOptions) error {
 		if o.Timeouts == nil {
@@ -149,7 +149,7 @@ func WithTimeout(timeoutType fab.TimeoutType, timeout time.Duration) RequestOpti
 	}
 }
 
-//WithParentContext encapsulates grpc parent context
+// WithParentContext encapsulates grpc parent context
 func WithParentContext(parentContext reqContext.Context) RequestOption {
 	return func(ctx context.Client, o *requestOptions) error {
 		o.ParentContext = parentContext
@@ -157,7 +157,7 @@ func WithParentContext(parentContext reqContext.Context) RequestOption {
 	}
 }
 
-//WithChaincodeFilter adds a chaincode filter for figuring out additional endorsers
+// WithChaincodeFilter adds a chaincode filter for figuring out additional endorsers
 func WithChaincodeFilter(ccFilter invoke.CCFilter) RequestOption {
 	return func(ctx context.Client, o *requestOptions) error {
 		o.CCFilter = ccFilter

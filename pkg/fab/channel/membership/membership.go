@@ -14,11 +14,11 @@ import (
 	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/golang/protobuf/proto"
 	mb "github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
-	"github.com/hyperledger/fabric-sdk-go/pkg/client/common/verifier"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/client/common/verifier"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

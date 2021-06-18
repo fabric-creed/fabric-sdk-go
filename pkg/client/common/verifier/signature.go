@@ -12,9 +12,9 @@ import (
 
 	"github.com/cetcxinlian/cryptogm/x509"
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

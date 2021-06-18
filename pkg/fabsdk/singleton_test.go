@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
-	configImpl "github.com/hyperledger/fabric-sdk-go/pkg/core/config"
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/logging/api"
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/logging/modlog"
-	"github.com/hyperledger/fabric-sdk-go/test/metadata"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/common/logging"
+	configImpl "github.com/JieWaZi/fabric-sdk-go/pkg/core/config"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/api"
+	"github.com/JieWaZi/fabric-sdk-go/pkg/core/logging/modlog"
+	"github.com/JieWaZi/fabric-sdk-go/test/metadata"
 )
 
 func TestDefLoggerFactory(t *testing.T) {

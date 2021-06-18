@@ -19,7 +19,7 @@ import (
 
 	"github.com/cetcxinlian/cryptogm/sm2"
 	"github.com/cetcxinlian/cryptogm/x509"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/JieWaZi/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 type aes256ImportKeyOptsKeyImporter struct{}
