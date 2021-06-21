@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-config/protolator"
+	"github.com/fabric-creed/fabric-config/protolator"
 	"github.com/fabric-creed/fabric-protos-go/common"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/keyutil"
 	"github.com/stretchr/testify/assert"
