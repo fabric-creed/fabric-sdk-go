@@ -38,6 +38,10 @@ var (
 		tls.TLS_RSA_WITH_AES_128_GCM_SHA256,
 		tls.TLS_RSA_WITH_AES_256_GCM_SHA384,
 	}
+	// strong GM TLS cipher suites
+	DefaultGMTLSCipherSuites = []uint16{
+		tls.GMTLS_SM2_WITH_SM4_SM3,
+	}
 	// default connection timeout
 	DefaultConnectionTimeout = 5 * time.Second
 )

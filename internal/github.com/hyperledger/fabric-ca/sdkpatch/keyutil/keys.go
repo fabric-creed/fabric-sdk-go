@@ -11,6 +11,7 @@ Please review third_party pinning scripts and patches for more details.
 package keyutil
 
 import (
+	"crypto"
 	"crypto/ecdsa"
 	"encoding/pem"
 	"errors"
@@ -19,9 +20,9 @@ import (
 	"github.com/fabric-creed/cryptogm/x509"
 )
 
-func PrivateKeyToDER(privateKey *ecdsa.PrivateKey) ([]byte, error) {
+func PrivateKeyToDER(privateKey crypto.PrivateKey) ([]byte, error) {
 	if privateKey == nil {
-		return nil, errors.New("invalid ecdsa private key. It must be different from nil")
+		return nil, errors.New("invalid ecdsa/sm2 private key. It must be different from nil")
 	}
 
 	return x509.MarshalECPrivateKey(privateKey)

@@ -14,3 +14,5 @@ scripts/_go/bin/
 .idea/
 test/fixtures/fabric/*/crypto-config/
 test/fixtures/fabric/*/channel/
+test/example
+test/base

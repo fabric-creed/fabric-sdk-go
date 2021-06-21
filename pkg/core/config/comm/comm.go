@@ -7,8 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package comm
 
 import (
+	"github.com/fabric-creed/cryptogm/sm2"
 	"github.com/fabric-creed/cryptogm/tls"
 	"github.com/fabric-creed/cryptogm/x509"
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkinternal/pkg/comm"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/core/cryptosuite"
 	"github.com/pkg/errors"
@@ -26,7 +28,11 @@ func TLSConfig(cert *x509.Certificate, serverName string, config fab.EndpointCon
 	if err != nil {
 		return nil, err
 	}
-	return &tls.Config{RootCAs: certPool, Certificates: config.TLSClientCerts(), ServerName: serverName}, nil
+	certPool.GetCerts()
+	if _, ok := certPool.GetCerts()[0].PublicKey.(*sm2.PublicKey); ok {
+		return &tls.Config{GMSupport: &tls.GMSupport{}, RootCAs: certPool, Certificates: config.TLSClientCerts(), ServerName: serverName, CipherSuites: comm.DefaultGMTLSCipherSuites}, nil
+	}
+	return &tls.Config{RootCAs: certPool, Certificates: config.TLSClientCerts(), ServerName: serverName, CipherSuites: comm.DefaultTLSCipherSuites}, nil
 }
 
 // TLSCertHash is a utility method to calculate the SHA256 hash of the configured certificate (for usage in channel headers)

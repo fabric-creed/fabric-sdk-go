@@ -8,7 +8,7 @@ require (
 	github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible
 	github.com/cloudflare/cfssl v1.4.1
 	github.com/fabric-creed/cryptogm v0.0.0-20210621021614-9b28f0c0045b
-	github.com/fabric-creed/fabric-config v0.1.1 // indirect
+	github.com/fabric-creed/fabric-config v0.1.1
 	github.com/fabric-creed/fabric-protos-go v0.0.0-20210621061524-cae0a59d99d3
 	github.com/fabric-creed/grpc v1.29.1-gm
 	github.com/go-kit/kit v0.10.0
@@ -22,6 +22,7 @@ require (
 	github.com/pelletier/go-toml v1.8.0 // indirect
 	github.com/pkg/errors v0.8.1
 	github.com/prometheus/client_golang v1.3.0
+	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/afero v1.3.1 // indirect
 	github.com/spf13/cast v1.3.1
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
