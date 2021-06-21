@@ -19,6 +19,8 @@ import (
 	"github.com/fabric-creed/grpc/keepalive"
 	grpcstatus "github.com/fabric-creed/grpc/status"
 
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/verifier"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
@@ -26,8 +28,6 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 
 const (

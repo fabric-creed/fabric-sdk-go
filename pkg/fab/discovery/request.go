@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package discovery
 
 import (
-	"github.com/hyperledger/fabric-protos-go/discovery"
+	"github.com/fabric-creed/fabric-protos-go/discovery"
 	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
 )
 

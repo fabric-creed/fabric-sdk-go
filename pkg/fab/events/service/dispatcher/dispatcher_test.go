@@ -17,8 +17,8 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/service/blockfilter"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/service/blockfilter/headertypefilter"
 	servicemocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/service/mocks"
-	cb "github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	cb "github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 )
 
 var sourceURL = "localhost:9051"

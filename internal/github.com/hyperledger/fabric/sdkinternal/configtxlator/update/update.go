@@ -19,7 +19,7 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	cb "github.com/hyperledger/fabric-protos-go/common"
+	cb "github.com/fabric-creed/fabric-protos-go/common"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
 )
 

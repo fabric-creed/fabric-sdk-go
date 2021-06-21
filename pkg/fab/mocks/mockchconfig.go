@@ -9,9 +9,9 @@ package mocks
 import (
 	reqContext "context"
 
-	"github.com/hyperledger/fabric-protos-go/common"
+	"github.com/fabric-creed/fabric-protos-go/common"
 
-	msp "github.com/hyperledger/fabric-protos-go/msp"
+	msp "github.com/fabric-creed/fabric-protos-go/msp"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 )

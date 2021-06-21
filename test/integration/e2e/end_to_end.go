@@ -17,7 +17,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 	"github.com/stretchr/testify/require"
 
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/test/integration"
 	"github.com/fabric-creed/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
 

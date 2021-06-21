@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package gateway
 
 import (
-	"github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/peer"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel/invoke"

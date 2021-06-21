@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric-protos-go/orderer"
+	"github.com/fabric-creed/fabric-protos-go/orderer"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/util/test"
 
@@ -27,8 +27,8 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/policydsl"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"

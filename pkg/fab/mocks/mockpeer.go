@@ -13,8 +13,8 @@ import (
 	"sync"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/ledger/rwset/kvrwset"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 )

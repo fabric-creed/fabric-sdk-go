@@ -27,8 +27,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	mb "github.com/hyperledger/fabric-protos-go/msp"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	mb "github.com/fabric-creed/fabric-protos-go/msp"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/ledger"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/resmgmt"
 

@@ -14,8 +14,8 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
 	"github.com/pkg/errors"
 
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	selectopts "github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/options"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/peer"

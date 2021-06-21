@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package dispatcher
 
 import (
-	cb "github.com/hyperledger/fabric-protos-go/common"
-	ab "github.com/hyperledger/fabric-protos-go/orderer"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	cb "github.com/fabric-creed/fabric-protos-go/common"
+	ab "github.com/fabric-creed/fabric-protos-go/orderer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
 	fabcontext "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"

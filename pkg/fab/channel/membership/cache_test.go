@@ -15,7 +15,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/util/concurrent/lazyref"
-	mb "github.com/hyperledger/fabric-protos-go/msp"
+	mb "github.com/fabric-creed/fabric-protos-go/msp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

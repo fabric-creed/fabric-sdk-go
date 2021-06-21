@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/chaincode/persistence"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkinternal/peer/packaging"

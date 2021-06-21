@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/fabric-creed/cryptogm/x509"
-	"github.com/hyperledger/fabric-protos-go/common"
+	"github.com/fabric-creed/fabric-protos-go/common"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"

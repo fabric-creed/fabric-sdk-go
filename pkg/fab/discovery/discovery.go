@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hyperledger/fabric-protos-go/discovery"
+	"github.com/fabric-creed/fabric-protos-go/discovery"
 	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 	fabcontext "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"

@@ -11,8 +11,8 @@ import (
 	"reflect"
 
 	"github.com/golang/protobuf/proto"
-	common "github.com/hyperledger/fabric-protos-go/common"
-	mb "github.com/hyperledger/fabric-protos-go/msp"
+	common "github.com/fabric-creed/fabric-protos-go/common"
+	mb "github.com/fabric-creed/fabric-protos-go/msp"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/pkg/errors"

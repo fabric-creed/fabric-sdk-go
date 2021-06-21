@@ -13,9 +13,9 @@ import (
 	"strings"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
-	lb "github.com/hyperledger/fabric-protos-go/peer/lifecycle"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
+	lb "github.com/fabric-creed/fabric-protos-go/peer/lifecycle"
 	"github.com/pkg/errors"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/multi"

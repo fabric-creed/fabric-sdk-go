@@ -29,8 +29,8 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/chconfig"
 
 	contextImpl "github.com/fabric-creed/fabric-sdk-go/pkg/context"

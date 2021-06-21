@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel/invoke"
 	txnmocks "github.com/fabric-creed/fabric-sdk-go/pkg/client/common/mocks"
 	cpc "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"

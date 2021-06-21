@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/retry"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
 

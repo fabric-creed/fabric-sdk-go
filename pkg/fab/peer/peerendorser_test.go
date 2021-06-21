@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/stretchr/testify/assert"
 	"github.com/fabric-creed/grpc"
 	grpcCodes "github.com/fabric-creed/grpc/codes"

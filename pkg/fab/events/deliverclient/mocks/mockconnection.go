@@ -9,9 +9,9 @@ package mocks
 import (
 	"time"
 
-	cb "github.com/hyperledger/fabric-protos-go/common"
-	ab "github.com/hyperledger/fabric-protos-go/orderer"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	cb "github.com/fabric-creed/fabric-protos-go/common"
+	ab "github.com/fabric-creed/fabric-protos-go/orderer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	clientmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/mocks"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/deliverclient/connection"
 	"github.com/pkg/errors"

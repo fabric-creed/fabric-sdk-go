@@ -14,7 +14,7 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	mspprotos "github.com/hyperledger/fabric-protos-go/msp"
+	mspprotos "github.com/fabric-creed/fabric-protos-go/msp"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp/cache"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"

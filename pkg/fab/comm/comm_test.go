@@ -14,7 +14,7 @@ import (
 
 	eventmocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/mocks"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/grpc"
 )
 

@@ -12,10 +12,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/timestamp"
 
-	"github.com/hyperledger/fabric-protos-go/common"
-	mb "github.com/hyperledger/fabric-protos-go/msp"
-	ab "github.com/hyperledger/fabric-protos-go/orderer"
-	pp "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	mb "github.com/fabric-creed/fabric-protos-go/msp"
+	ab "github.com/fabric-creed/fabric-protos-go/orderer"
+	pp "github.com/fabric-creed/fabric-protos-go/peer"
 	cutil "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/util"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
 

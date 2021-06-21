@@ -13,7 +13,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/policydsl"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	mocks "github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
-	common "github.com/hyperledger/fabric-protos-go/common"
+	common "github.com/fabric-creed/fabric-protos-go/common"
 )
 
 const (

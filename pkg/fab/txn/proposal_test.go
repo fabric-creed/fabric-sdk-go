@@ -25,7 +25,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
 	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 )
 
 const (

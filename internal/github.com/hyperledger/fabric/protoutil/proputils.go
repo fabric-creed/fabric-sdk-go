@@ -17,8 +17,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	"github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 )
 

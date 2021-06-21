@@ -13,9 +13,9 @@ import (
 	"sync"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-protos-go/common"
-	po "github.com/hyperledger/fabric-protos-go/orderer"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	po "github.com/fabric-creed/fabric-protos-go/orderer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/service/mocks"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/util/test"
 	"github.com/fabric-creed/grpc"

@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/hyperledger/fabric-protos-go/gossip"
+	"github.com/fabric-creed/fabric-protos-go/gossip"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/test/mockfab"
 	"github.com/stretchr/testify/require"

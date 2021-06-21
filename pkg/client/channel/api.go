@@ -15,7 +15,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 )
 

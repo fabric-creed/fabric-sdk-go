@@ -20,7 +20,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
 	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
-	"github.com/hyperledger/fabric-protos-go/common"
+	"github.com/fabric-creed/fabric-protos-go/common"
 	"github.com/stretchr/testify/assert"
 )
 

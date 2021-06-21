@@ -26,7 +26,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	mb "github.com/hyperledger/fabric-protos-go/msp"
+	mb "github.com/fabric-creed/fabric-protos-go/msp"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 

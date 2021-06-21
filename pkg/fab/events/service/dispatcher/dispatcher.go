@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	cb "github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	cb "github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkinternal/pkg/txflags"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"

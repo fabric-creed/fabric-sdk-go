@@ -9,7 +9,7 @@ package discovery
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric-protos-go/gossip"
+	"github.com/fabric-creed/fabric-protos-go/gossip"
 	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
 	gprotoext "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/gossip/protoext"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"

@@ -24,7 +24,7 @@ import (
 
 	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-protos-go/msp"
+	"github.com/fabric-creed/fabric-protos-go/msp"
 	bccsp "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 	flogging "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	logging "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"

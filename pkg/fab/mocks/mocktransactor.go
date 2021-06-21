@@ -10,7 +10,7 @@ import (
 	reqContex "context"
 	"net/http"
 
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 )
 

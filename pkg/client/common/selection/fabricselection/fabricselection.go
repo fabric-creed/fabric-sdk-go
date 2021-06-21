@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hyperledger/fabric-protos-go/discovery"
+	"github.com/fabric-creed/fabric-protos-go/discovery"
 	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/random"
 	soptions "github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/options"

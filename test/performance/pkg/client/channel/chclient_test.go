@@ -28,7 +28,7 @@ import (
 
 	"github.com/fabric-creed/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
 	"github.com/fabric-creed/fabric-sdk-go/third_party/github.com/hyperledger/fabric/core/common/ccprovider"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 )
 
 const (

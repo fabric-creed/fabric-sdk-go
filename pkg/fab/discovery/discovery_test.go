@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric-protos-go/discovery"
+	"github.com/fabric-creed/fabric-protos-go/discovery"
 	discclient "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/discovery/client"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"

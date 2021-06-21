@@ -14,7 +14,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/hyperledger/fabric-protos-go/msp"
+	"github.com/fabric-creed/fabric-protos-go/msp"
 	mspcfg "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/msp"
 )
 

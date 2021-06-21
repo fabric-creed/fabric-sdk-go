@@ -20,7 +20,7 @@ import (
 	"net/url"
 	"regexp"
 
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
 	flogging "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 )

@@ -9,8 +9,8 @@ package retry
 import (
 	"time"
 
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
 	grpcCodes "github.com/fabric-creed/grpc/codes"
 )

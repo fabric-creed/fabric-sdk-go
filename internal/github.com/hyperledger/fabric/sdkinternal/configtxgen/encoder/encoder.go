@@ -12,8 +12,8 @@ package encoder
 
 import (
 	"github.com/golang/protobuf/proto"
-	cb "github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	cb "github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/channelconfig"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/genesis"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/policies"

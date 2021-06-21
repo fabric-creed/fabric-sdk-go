@@ -9,8 +9,8 @@ package status
 import (
 	"strconv"
 
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	grpcCodes "github.com/fabric-creed/grpc/codes"
 )
 

@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel"
 	mspclient "github.com/fabric-creed/fabric-sdk-go/pkg/client/msp"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/resmgmt"

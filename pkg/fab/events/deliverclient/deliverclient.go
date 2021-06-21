@@ -10,7 +10,7 @@ import (
 	"math"
 	"time"
 
-	ab "github.com/hyperledger/fabric-protos-go/orderer"
+	ab "github.com/fabric-creed/fabric-protos-go/orderer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
 	fabcontext "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"

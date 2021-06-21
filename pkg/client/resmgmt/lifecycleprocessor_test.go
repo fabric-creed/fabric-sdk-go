@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	lb "github.com/hyperledger/fabric-protos-go/peer/lifecycle"
+	lb "github.com/fabric-creed/fabric-protos-go/peer/lifecycle"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

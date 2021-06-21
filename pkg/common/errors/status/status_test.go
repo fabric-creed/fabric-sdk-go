@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/multi"
-	"github.com/hyperledger/fabric-protos-go/common"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	grpccodes "github.com/fabric-creed/grpc/codes"

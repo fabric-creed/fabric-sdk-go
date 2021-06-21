@@ -15,7 +15,7 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-protos-go/gossip"
+	"github.com/fabric-creed/fabric-protos-go/gossip"
 )
 
 // Signer signs a message, and returns (signature, nil)

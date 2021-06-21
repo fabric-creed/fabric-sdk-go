@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	cb "github.com/hyperledger/fabric-protos-go/common"
-	ab "github.com/hyperledger/fabric-protos-go/orderer"
+	cb "github.com/fabric-creed/fabric-protos-go/common"
+	ab "github.com/fabric-creed/fabric-protos-go/orderer"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/common/capabilities"
 	"github.com/pkg/errors"
 )

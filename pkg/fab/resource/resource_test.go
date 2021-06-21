@@ -16,7 +16,7 @@ import (
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/retry"
 
-	"github.com/hyperledger/fabric-protos-go/common"
+	"github.com/fabric-creed/fabric-protos-go/common"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"

@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric-protos-go/gossip"
+	"github.com/fabric-creed/fabric-protos-go/gossip"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/balancer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/selection/options"

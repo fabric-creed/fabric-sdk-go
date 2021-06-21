@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	pb "github.com/hyperledger/fabric-protos-go/peer"
-	lb "github.com/hyperledger/fabric-protos-go/peer/lifecycle"
+	pb "github.com/fabric-creed/fabric-protos-go/peer"
+	lb "github.com/fabric-creed/fabric-protos-go/peer/lifecycle"
 	"github.com/stretchr/testify/require"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"

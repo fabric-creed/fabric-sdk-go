@@ -18,7 +18,7 @@ import (
 
 	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/golang/protobuf/proto"
-	m "github.com/hyperledger/fabric-protos-go/msp"
+	m "github.com/fabric-creed/fabric-protos-go/msp"
 	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp/utils"
 	factory "github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"

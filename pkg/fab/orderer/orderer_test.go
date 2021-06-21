@@ -19,8 +19,8 @@ import (
 	grpccodes "github.com/fabric-creed/grpc/codes"
 
 	"github.com/golang/mock/gomock"
-	"github.com/hyperledger/fabric-protos-go/common"
-	ab "github.com/hyperledger/fabric-protos-go/orderer"
+	"github.com/fabric-creed/fabric-protos-go/common"
+	ab "github.com/fabric-creed/fabric-protos-go/orderer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/test/mockfab"
