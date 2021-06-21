@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/keepalive"
+	"github.com/fabric-creed/grpc/keepalive"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
 	clientdisp "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/dispatcher"
@@ -24,7 +24,7 @@ import (
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 type streamType string

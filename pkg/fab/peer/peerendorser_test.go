@@ -17,9 +17,9 @@ import (
 	"github.com/golang/mock/gomock"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/stretchr/testify/assert"
-	"google.golang.org/grpc"
-	grpcCodes "google.golang.org/grpc/codes"
-	"google.golang.org/grpc/keepalive"
+	"github.com/fabric-creed/grpc"
+	grpcCodes "github.com/fabric-creed/grpc/codes"
+	"github.com/fabric-creed/grpc/keepalive"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"

@@ -19,7 +19,7 @@ import (
 	corecomm "github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
 	"github.com/pkg/errors"
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

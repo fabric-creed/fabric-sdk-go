@@ -13,8 +13,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/testdata"
+	"github.com/fabric-creed/grpc/credentials"
+	"github.com/fabric-creed/grpc/testdata"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/channel"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"

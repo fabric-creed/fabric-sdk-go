@@ -12,7 +12,7 @@ import (
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
-	grpcCodes "google.golang.org/grpc/codes"
+	grpcCodes "github.com/fabric-creed/grpc/codes"
 )
 
 const (

@@ -30,8 +30,8 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/third_party/github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/credentials"
 )
 
 // MockEndorserServer mock endorser server to process endorsement proposals

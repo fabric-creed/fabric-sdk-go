@@ -24,7 +24,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/comm"
 	clientdisp "github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/client/dispatcher"
 	"github.com/pkg/errors"
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

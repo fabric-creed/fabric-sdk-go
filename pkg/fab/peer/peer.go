@@ -13,9 +13,9 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/client/common/verifier"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/keepalive"
 	"github.com/spf13/cast"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/keepalive"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

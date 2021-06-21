@@ -70,8 +70,12 @@ github.com/envoyproxy/go-control-plane v0.9.4/go.mod h1:6rpuAdCZL397s3pYoYcLgu1m
 github.com/envoyproxy/protoc-gen-validate v0.1.0/go.mod h1:iSmxcyjqTsJpI2R4NaDN7+kN2VEUnK/pcBlmesArF7c=
 github.com/fabric-creed/cryptogm v0.0.0-20210618092555-1ab68b095124 h1:kX6UNrH4sjAPDlqCnLxy0o/RSbPmXto+cxG9ceqrE8k=
 github.com/fabric-creed/cryptogm v0.0.0-20210618092555-1ab68b095124/go.mod h1:5OnHQpYlXgZgJbKKImqmODTLPXH9AevABkvDeCfds7I=
+github.com/fabric-creed/cryptogm v0.0.0-20210621021614-9b28f0c0045b h1:m7WSY7/rTFUIudMc6pvJEsyfARY3LWpf+znUhtI29lk=
+github.com/fabric-creed/cryptogm v0.0.0-20210621021614-9b28f0c0045b/go.mod h1:5OnHQpYlXgZgJbKKImqmODTLPXH9AevABkvDeCfds7I=
 github.com/fabric-creed/cryptox v0.0.0-20210618072314-ca7d285682a8 h1:SZ3hHStk6el+F8PZdB3g+s8a8SolSIV8Vd+zi5gIZRg=
 github.com/fabric-creed/cryptox v0.0.0-20210618072314-ca7d285682a8/go.mod h1:C/WAHwVqhzu3bYrmJvO6lyYSwDNFkH0S7TpnPYKMptc=
+github.com/fabric-creed/grpc v1.29.1-gm h1:cpernulQc0MG2iJYRuqF/7HEOJXvJtAA0n0WmSNXhV8=
+github.com/fabric-creed/grpc v1.29.1-gm/go.mod h1:AJOP0EFOkXpckD4+3HWjbaHjYdPy5ZyKVnL8oPfGobs=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
 github.com/franela/goblin v0.0.0-20200105215937-c9ffbefa60db/go.mod h1:7dvUGVsVBjqR7JHJk0brhHOZYGmfBYOrK0ZhYMEtBr4=
 github.com/franela/goreq v0.0.0-20171204163338-bcd34c9993f8/go.mod h1:ZhphrRTfi2rbfLwlschooIH4+wKKDR4Pdxhh+TRoA20=

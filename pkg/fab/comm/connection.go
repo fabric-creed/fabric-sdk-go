@@ -19,8 +19,8 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
 	"github.com/pkg/errors"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/credentials"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

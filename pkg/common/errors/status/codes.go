@@ -11,7 +11,7 @@ import (
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	grpcCodes "google.golang.org/grpc/codes"
+	grpcCodes "github.com/fabric-creed/grpc/codes"
 )
 
 // Code represents a status code

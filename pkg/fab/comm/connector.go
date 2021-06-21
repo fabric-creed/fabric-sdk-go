@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/connectivity"
 )
 
 const (

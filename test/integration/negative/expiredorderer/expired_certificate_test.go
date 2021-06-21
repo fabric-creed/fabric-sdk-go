@@ -15,7 +15,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/core"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk"
-	"google.golang.org/grpc/grpclog"
+	"github.com/fabric-creed/grpc/grpclog"
 
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/logging"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config"

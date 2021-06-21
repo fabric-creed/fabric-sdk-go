@@ -15,9 +15,9 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/options"
 	fabcontext "github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/context"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/peer"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/credentials"
+	"github.com/fabric-creed/grpc/peer"
 )
 
 // StreamProvider creates a GRPC stream

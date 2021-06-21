@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	grpccodes "google.golang.org/grpc/codes"
+	"github.com/fabric-creed/grpc"
+	grpccodes "github.com/fabric-creed/grpc/codes"
 
 	"github.com/golang/mock/gomock"
 	"github.com/hyperledger/fabric-protos-go/common"

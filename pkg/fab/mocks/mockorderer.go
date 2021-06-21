@@ -16,8 +16,8 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/fab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/util/test"
 	"github.com/pkg/errors"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/credentials"
 )
 
 // DeliverySession enables simulation of multiple calls to the orderer

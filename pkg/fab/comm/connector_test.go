@@ -18,8 +18,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/connectivity"
 )
 
 const (

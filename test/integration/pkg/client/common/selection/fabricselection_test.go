@@ -29,7 +29,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/test/integration"
 	"github.com/fabric-creed/fabric-sdk-go/test/metadata"
 	"github.com/fabric-creed/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
-	grpcCodes "google.golang.org/grpc/codes"
+	grpcCodes "github.com/fabric-creed/grpc/codes"
 )
 
 const (

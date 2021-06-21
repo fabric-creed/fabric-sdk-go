@@ -16,7 +16,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/msp"
 	commtls "github.com/fabric-creed/fabric-sdk-go/pkg/core/config/comm/tls"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fabsdk/metrics"
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 // ClientContext contains the client context

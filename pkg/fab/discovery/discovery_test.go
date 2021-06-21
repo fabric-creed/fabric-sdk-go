@@ -22,7 +22,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
 	mspmocks "github.com/fabric-creed/fabric-sdk-go/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 const (

@@ -15,8 +15,8 @@ import (
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
-	grpccodes "google.golang.org/grpc/codes"
-	grpcstatus "google.golang.org/grpc/status"
+	grpccodes "github.com/fabric-creed/grpc/codes"
+	grpcstatus "github.com/fabric-creed/grpc/status"
 )
 
 func TestStatusConstructors(t *testing.T) {

@@ -18,8 +18,8 @@ import (
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/events/service/mocks"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/util/test"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/credentials"
 )
 
 // TestBlock is a test block
