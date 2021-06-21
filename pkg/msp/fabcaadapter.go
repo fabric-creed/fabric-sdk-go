@@ -7,6 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package msp
 
 import (
+	"github.com/fabric-creed/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/utils"
 	"github.com/pkg/errors"
 
 	"encoding/json"
@@ -604,13 +605,13 @@ func createFabricCAClient(caID string, cryptoSuite core.CryptoSuite, config msp.
 		return nil, errors.Errorf("No CA '%s' in the configs", caID)
 	}
 
-	//set server CAName
+	// set server CAName
 	c.Config.CAName = conf.CAName
-	//set server URL
+	// set server URL
 	c.Config.URL = endpoint.ToAddress(conf.URL)
-	//set server name
+	// set server name
 	c.Config.ServerName, _ = conf.GRPCOptions["ssl-target-name-override"].(string)
-	//certs file list
+	// certs file list
 	c.Config.TLS.CertFiles, ok = config.CAServerCerts(caID)
 	if !ok {
 		return nil, errors.Errorf("CA '%s' has no corresponding server certs in the configs", caID)
@@ -628,16 +629,20 @@ func createFabricCAClient(caID string, cryptoSuite core.CryptoSuite, config msp.
 	}
 
 	var err error
-	c.Config.TLS.TlsCertPool, err = config.TLSCACertPool().Get()
+	certPool, err := config.TLSCACertPool().Get()
 	if err != nil {
 		return nil, errors.Wrap(err, "couldn't load configured cert pool")
 	}
+	certs := utils.CopyGMX509ToX509s(certPool.GetCerts())
+	for i := range certs {
+		c.Config.TLS.TlsCertPool.AddCert(certs[i])
+	}
 
-	//TLS flag enabled/disabled
+	// TLS flag enabled/disabled
 	c.Config.TLS.Enabled = endpoint.IsTLSEnabled(conf.URL)
 	c.Config.MSPDir = config.CAKeyStorePath()
 
-	//Factory opts
+	// Factory opts
 	c.Config.CSP = cryptoSuite
 
 	err = c.Init()

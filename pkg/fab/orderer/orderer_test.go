@@ -8,7 +8,6 @@ package orderer
 
 import (
 	reqContext "context"
-	"crypto/x509"
 	"os"
 	"path/filepath"
 	"strings"
@@ -18,7 +17,7 @@ import (
 	"github.com/fabric-creed/grpc"
 	grpccodes "github.com/fabric-creed/grpc/codes"
 
-	"github.com/golang/mock/gomock"
+	"github.com/fabric-creed/cryptogm/x509"
 	"github.com/fabric-creed/fabric-protos-go/common"
 	ab "github.com/fabric-creed/fabric-protos-go/orderer"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/errors/status"
@@ -26,6 +25,7 @@ import (
 	"github.com/fabric-creed/fabric-sdk-go/pkg/common/providers/test/mockfab"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/core/config/endpoint"
 	"github.com/fabric-creed/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/golang/mock/gomock"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
@@ -146,7 +146,7 @@ func TestNewOrdererWithTLS(t *testing.T) {
 		t.Fatalf("Testing New with TLS failed, cause [%s]", err)
 	}
 
-	//Negative Test case
+	// Negative Test case
 	orderer, err = New(mocks.NewMockEndpointConfigCustomized(true, false, true), WithURL("grpcs://"))
 
 	if orderer != nil || err == nil {
@@ -155,7 +155,7 @@ func TestNewOrdererWithTLS(t *testing.T) {
 }
 
 func TestNewOrdererWithMutualTLS(t *testing.T) {
-	//Positive Test case
+	// Positive Test case
 	tlsConfig := endpoint.TLSConfig{Path: filepath.Join("testdata", "ca.crt")}
 	err := tlsConfig.LoadBytes()
 	if err != nil {
@@ -173,7 +173,7 @@ func TestNewOrdererWithMutualTLS(t *testing.T) {
 	if orderer == nil || err != nil {
 		t.Fatalf("Testing New with Mutual TLS failed, cause [%s]", err)
 	}
-	//Negative Test case
+	// Negative Test case
 	orderer, err = New(mocks.NewMockEndpointConfigCustomized(true, false, false), WithURL("grpcs://"), WithTLSCert(cert))
 
 	if orderer == nil || err != nil {
@@ -382,7 +382,7 @@ func TestGetKeepAliveOptions(t *testing.T) {
 	grpcOpts["keep-alive-time"] = "s"
 	grpcOpts["keep-alive-timeout"] = 2 * time.Second
 	grpcOpts["keep-alive-permit"] = false
-	//orderer config with GRPC opts
+	// orderer config with GRPC opts
 	ordererConfig := &fab.OrdererConfig{
 		GRPCOptions: grpcOpts,
 	}
@@ -417,10 +417,10 @@ func TestFailFast(t *testing.T) {
 
 func getGRPCOpts(addr string, failFast bool, keepAliveOptions bool, allowInSecure bool) *fab.OrdererConfig {
 	grpcOpts := make(map[string]interface{})
-	//fail fast
+	// fail fast
 	grpcOpts["fail-fast"] = failFast
 
-	//keep alive options
+	// keep alive options
 	if keepAliveOptions {
 		grpcOpts["keep-alive-time"] = 1 * time.Second
 		grpcOpts["keep-alive-timeout"] = 2 * time.Second
@@ -428,10 +428,10 @@ func getGRPCOpts(addr string, failFast bool, keepAliveOptions bool, allowInSecur
 
 	}
 
-	//allow in secure
+	// allow in secure
 	grpcOpts["allow-insecure"] = allowInSecure
 
-	//orderer config with GRPC opts
+	// orderer config with GRPC opts
 	ordererConfig := &fab.OrdererConfig{
 		URL:         "grpc://" + addr,
 		GRPCOptions: grpcOpts,
@@ -450,7 +450,7 @@ func TestForDeadlineExceeded(t *testing.T) {
 }
 
 func TestSendDeliverDefaultOpts(t *testing.T) {
-	//keep alive option is not set and fail fast is false - invalid URL
+	// keep alive option is not set and fail fast is false - invalid URL
 	orderer, _ := New(mocks.NewMockEndpointConfig(), WithURL("grpc://"+testOrdererURL+"Test"), WithInsecure())
 	orderer.dialTimeout = 5 * time.Second
 	_, err := orderer.SendBroadcast(reqContext.Background(), &fab.SignedEnvelope{})
@@ -509,7 +509,7 @@ func TestForGRPCErrorsWithKeepAliveOptsFailFast(t *testing.T) {
 */
 
 func TestForGRPCErrorsWithKeepAliveOpts(t *testing.T) {
-	//expect here GRPC deadline exceeded since fail fast is set to false
+	// expect here GRPC deadline exceeded since fail fast is set to false
 	ordererConfig := getGRPCOpts(testOrdererURL+"Test", false, true, true)
 	orderer, _ := New(mocks.NewMockEndpointConfig(), FromOrdererConfig(ordererConfig))
 	orderer.dialTimeout = 2 * time.Second
@@ -520,19 +520,19 @@ func TestForGRPCErrorsWithKeepAliveOpts(t *testing.T) {
 	statusError, ok := status.FromError(err)
 	assert.True(t, ok, "Expected status error")
 	assert.EqualValues(t, status.ConnectionFailed, status.ToOrdererStatusCode(statusError.Code))
-	//assert.EqualValues(t, grpccodes.DeadlineExceeded, status.ToGRPCStatusCode(statusError.Code))
+	// assert.EqualValues(t, grpccodes.DeadlineExceeded, status.ToGRPCStatusCode(statusError.Code))
 	assert.Equal(t, status.OrdererClientStatus, statusError.Group)
 }
 
 func TestNewOrdererFromOrdererName(t *testing.T) {
-	t.Run("run simple FromOrdererName", func(t *testing.T){
+	t.Run("run simple FromOrdererName", func(t *testing.T) {
 		_, err := New(mocks.NewMockEndpointConfig(), FromOrdererName("orderer"))
 		if err != nil {
 			t.Fatalf("Failed to get new orderer from name. Error: %s", err)
 		}
 	})
 
-	t.Run("run FromOrdererName with Ignore orderer in config", func(t *testing.T){
+	t.Run("run FromOrdererName with Ignore orderer in config", func(t *testing.T) {
 		mockCtrl := gomock.NewController(t)
 		defer mockCtrl.Finish()
 		mockEndpoingCfg := mockfab.NewMockEndpointConfig(mockCtrl)
@@ -545,7 +545,7 @@ func TestNewOrdererFromOrdererName(t *testing.T) {
 		}
 	})
 
-	t.Run("run FromOrdererName with orderer not found in config", func(t *testing.T){
+	t.Run("run FromOrdererName with orderer not found in config", func(t *testing.T) {
 		mockCtrl := gomock.NewController(t)
 		defer mockCtrl.Finish()
 		mockEndpoingCfg := mockfab.NewMockEndpointConfig(mockCtrl)
@@ -562,12 +562,12 @@ func TestNewOrdererFromOrdererName(t *testing.T) {
 func TestNewOrdererFromConfig(t *testing.T) {
 
 	grpcOpts := make(map[string]interface{})
-	//fail fast
+	// fail fast
 	grpcOpts["fail-fast"] = true
 	grpcOpts["keep-alive-time"] = 1 * time.Second
 	grpcOpts["keep-alive-timeout"] = 2 * time.Second
 	grpcOpts["keep-alive-permit"] = false
-	//orderer config with GRPC opts
+	// orderer config with GRPC opts
 	ordererConfig := &fab.OrdererConfig{
 		URL:         "",
 		GRPCOptions: grpcOpts,
@@ -586,21 +586,21 @@ func TestNewOrdererSecured(t *testing.T) {
 	config := mockfab.DefaultMockConfig(mockCtrl)
 	config.EXPECT().Timeout(fab.OrdererConnection).Return(time.Second * 1).AnyTimes()
 
-	//Test grpc URL
+	// Test grpc URL
 	url := "grpc://0.0.0.0:1234"
 	_, err := New(config, WithURL(url), WithInsecure())
 	if err != nil {
 		t.Fatal("Peer conn should be constructed")
 	}
 
-	//Test grpcs URL
+	// Test grpcs URL
 	url = "grpcs://0.0.0.0:1234"
 	_, err = New(config, WithURL(url), WithInsecure())
 	if err != nil {
 		t.Fatal("Peer conn should be constructed")
 	}
 
-	//Test URL without protocol
+	// Test URL without protocol
 	url = "0.0.0.0:1234"
 	_, err = New(config, WithURL(url), WithInsecure())
 	if err != nil {
